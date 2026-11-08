@@ -1,0 +1,202 @@
+[
+  {
+    "label": "convert-00",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-01",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-02",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-03",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.35,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-04",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.5,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-05",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-06",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 1,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-07",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.2,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-08",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 2,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-09",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 2.5,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-10",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.12
+    }
+  },
+  {
+    "label": "convert-11",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 2
+    }
+  },
+  {
+    "label": "convert-12",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.1,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-13",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-14",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.35,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-15",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 1,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-16",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.8,
+      "bidScale": 2,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-17",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 0.8,
+      "bidScale": 2,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "label": "convert-18",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.12
+    }
+  },
+  {
+    "label": "convert-19",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.1,
+      "acquisitionReserve": 0.8,
+      "bidScale": 2,
+      "holdGain": 2
+    }
+  }
+]

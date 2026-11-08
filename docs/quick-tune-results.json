@@ -1,0 +1,672 @@
+{
+  "createdAt": "2026-11-08T04:31:48.748Z",
+  "elapsedMs": 8554.034625,
+  "configs": [
+    {
+      "label": "convert-00",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 0.65,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-01",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.1,
+        "acquisitionReserve": 0.65,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-02",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.2,
+        "acquisitionReserve": 0.65,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-03",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.35,
+        "acquisitionReserve": 0.65,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-04",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 0.5,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-05",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 0.8,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-06",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 1,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-07",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 0.65,
+        "bidScale": 1.2,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-08",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 0.65,
+        "bidScale": 2,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-09",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 0.65,
+        "bidScale": 2.5,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-10",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 0.65,
+        "bidScale": 1.6,
+        "holdGain": 1.12
+      }
+    },
+    {
+      "label": "convert-11",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 0.65,
+        "bidScale": 1.6,
+        "holdGain": 2
+      }
+    },
+    {
+      "label": "convert-12",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.1,
+        "acquisitionReserve": 0.8,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-13",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.2,
+        "acquisitionReserve": 0.8,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-14",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.35,
+        "acquisitionReserve": 0.8,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-15",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.2,
+        "acquisitionReserve": 1,
+        "bidScale": 1.6,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-16",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1,
+        "acquisitionReserve": 0.8,
+        "bidScale": 2,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-17",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.2,
+        "acquisitionReserve": 0.8,
+        "bidScale": 2,
+        "holdGain": 1.5
+      }
+    },
+    {
+      "label": "convert-18",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.2,
+        "acquisitionReserve": 0.8,
+        "bidScale": 1.6,
+        "holdGain": 1.12
+      }
+    },
+    {
+      "label": "convert-19",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 1.1,
+        "acquisitionReserve": 0.8,
+        "bidScale": 2,
+        "holdGain": 2
+      }
+    }
+  ],
+  "training": {
+    "convert-00": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 67.8,
+        "meanPlace": 3.4,
+        "firstPlaceShare": 0.2,
+        "meanCash": 11.9,
+        "meanTilesWon": 11.7,
+        "meanPaid": 155.9
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 73.1,
+        "meanPlace": 2.6,
+        "firstPlaceShare": 0.3,
+        "meanCash": 10.6,
+        "meanTilesWon": 11.3,
+        "meanPaid": 162.5
+      }
+    },
+    "convert-01": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 68.2,
+        "meanPlace": 3.4,
+        "firstPlaceShare": 0.2,
+        "meanCash": 11.1,
+        "meanTilesWon": 11.7,
+        "meanPaid": 157.1
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 72,
+        "meanPlace": 2.6,
+        "firstPlaceShare": 0.4,
+        "meanCash": 11.5,
+        "meanTilesWon": 11.1,
+        "meanPaid": 160.5
+      }
+    },
+    "convert-02": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 68.1,
+        "meanPlace": 3.5,
+        "firstPlaceShare": 0.1,
+        "meanCash": 11.5,
+        "meanTilesWon": 11.7,
+        "meanPaid": 156.6
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 71.1,
+        "meanPlace": 2.8,
+        "firstPlaceShare": 0.3,
+        "meanCash": 12.7,
+        "meanTilesWon": 10.7,
+        "meanPaid": 158.4
+      }
+    },
+    "convert-03": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 68.1,
+        "meanPlace": 3.5,
+        "firstPlaceShare": 0.1,
+        "meanCash": 11.5,
+        "meanTilesWon": 11.7,
+        "meanPaid": 156.6
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 70.1,
+        "meanPlace": 2.9,
+        "firstPlaceShare": 0.2,
+        "meanCash": 12.2,
+        "meanTilesWon": 10.6,
+        "meanPaid": 157.9
+      }
+    },
+    "convert-04": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 72.4,
+        "meanPlace": 2.9,
+        "firstPlaceShare": 0.4,
+        "meanCash": 11.4,
+        "meanTilesWon": 11.4,
+        "meanPaid": 161
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 75.5,
+        "meanPlace": 2.4,
+        "firstPlaceShare": 0.5,
+        "meanCash": 11.6,
+        "meanTilesWon": 11.4,
+        "meanPaid": 163.9
+      }
+    },
+    "convert-05": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 72.5,
+        "meanPlace": 2.7,
+        "firstPlaceShare": 0.1,
+        "meanCash": 13.3,
+        "meanTilesWon": 11.3,
+        "meanPaid": 159.2
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 77.2,
+        "meanPlace": 2,
+        "firstPlaceShare": 0.6,
+        "meanCash": 9.1,
+        "meanTilesWon": 11.9,
+        "meanPaid": 168.1
+      }
+    },
+    "convert-06": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 78.7,
+        "meanPlace": 2.2,
+        "firstPlaceShare": 0.4,
+        "meanCash": 18.8,
+        "meanTilesWon": 11.6,
+        "meanPaid": 159.9
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 80.1,
+        "meanPlace": 1.9,
+        "firstPlaceShare": 0.45,
+        "meanCash": 11.8,
+        "meanTilesWon": 12,
+        "meanPaid": 168.3
+      }
+    },
+    "convert-07": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 70.2,
+        "meanPlace": 2.6,
+        "firstPlaceShare": 0.35,
+        "meanCash": 15.5,
+        "meanTilesWon": 11.4,
+        "meanPaid": 154.7
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 77.3,
+        "meanPlace": 2.7,
+        "firstPlaceShare": 0.4,
+        "meanCash": 10.9,
+        "meanTilesWon": 12,
+        "meanPaid": 166.4
+      }
+    },
+    "convert-08": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 69.9,
+        "meanPlace": 3.3,
+        "firstPlaceShare": 0.3,
+        "meanCash": 9.4,
+        "meanTilesWon": 11.3,
+        "meanPaid": 160.5
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 71.8,
+        "meanPlace": 2.9,
+        "firstPlaceShare": 0.2,
+        "meanCash": 9.8,
+        "meanTilesWon": 11.2,
+        "meanPaid": 162
+      }
+    },
+    "convert-09": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 74.2,
+        "meanPlace": 2.9,
+        "firstPlaceShare": 0.2,
+        "meanCash": 7.1,
+        "meanTilesWon": 12,
+        "meanPaid": 167.1
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 68,
+        "meanPlace": 3.3,
+        "firstPlaceShare": 0,
+        "meanCash": 7,
+        "meanTilesWon": 10.7,
+        "meanPaid": 161
+      }
+    },
+    "convert-10": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 67.6,
+        "meanPlace": 3.4,
+        "firstPlaceShare": 0.2,
+        "meanCash": 11.9,
+        "meanTilesWon": 11.6,
+        "meanPaid": 155.7
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 72.1,
+        "meanPlace": 2.7,
+        "firstPlaceShare": 0.3,
+        "meanCash": 9.9,
+        "meanTilesWon": 11.3,
+        "meanPaid": 162.2
+      }
+    },
+    "convert-11": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 67,
+        "meanPlace": 3.4,
+        "firstPlaceShare": 0.2,
+        "meanCash": 12,
+        "meanTilesWon": 11.6,
+        "meanPaid": 155
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 71.2,
+        "meanPlace": 2.5,
+        "firstPlaceShare": 0.3,
+        "meanCash": 11.8,
+        "meanTilesWon": 11.3,
+        "meanPaid": 159.4
+      }
+    },
+    "convert-12": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 72.6,
+        "meanPlace": 2.7,
+        "firstPlaceShare": 0.1,
+        "meanCash": 12.1,
+        "meanTilesWon": 11.5,
+        "meanPaid": 160.5
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 73.9,
+        "meanPlace": 2.4,
+        "firstPlaceShare": 0.4,
+        "meanCash": 10.8,
+        "meanTilesWon": 11.5,
+        "meanPaid": 163.1
+      }
+    },
+    "convert-13": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 72.6,
+        "meanPlace": 2.7,
+        "firstPlaceShare": 0.1,
+        "meanCash": 12.1,
+        "meanTilesWon": 11.5,
+        "meanPaid": 160.5
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 74.7,
+        "meanPlace": 2.3,
+        "firstPlaceShare": 0.4,
+        "meanCash": 9.6,
+        "meanTilesWon": 11.7,
+        "meanPaid": 165.1
+      }
+    },
+    "convert-14": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 72.8,
+        "meanPlace": 2.7,
+        "firstPlaceShare": 0.1,
+        "meanCash": 11.6,
+        "meanTilesWon": 11.6,
+        "meanPaid": 161.2
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 74.4,
+        "meanPlace": 2.3,
+        "firstPlaceShare": 0.4,
+        "meanCash": 9.1,
+        "meanTilesWon": 11.8,
+        "meanPaid": 165.3
+      }
+    },
+    "convert-15": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 78.8,
+        "meanPlace": 2.2,
+        "firstPlaceShare": 0.4,
+        "meanCash": 14.9,
+        "meanTilesWon": 11.8,
+        "meanPaid": 163.9
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 80.2,
+        "meanPlace": 2,
+        "firstPlaceShare": 0.5,
+        "meanCash": 11.5,
+        "meanTilesWon": 11.8,
+        "meanPaid": 168.7
+      }
+    },
+    "convert-16": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 79.6,
+        "meanPlace": 2.6,
+        "firstPlaceShare": 0.3,
+        "meanCash": 10.3,
+        "meanTilesWon": 11.9,
+        "meanPaid": 169.3
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 77.9,
+        "meanPlace": 2.1,
+        "firstPlaceShare": 0.35,
+        "meanCash": 12.8,
+        "meanTilesWon": 10.8,
+        "meanPaid": 165.1
+      }
+    },
+    "convert-17": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 80,
+        "meanPlace": 2.6,
+        "firstPlaceShare": 0.3,
+        "meanCash": 10.5,
+        "meanTilesWon": 12,
+        "meanPaid": 169.5
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 78.5,
+        "meanPlace": 2.1,
+        "firstPlaceShare": 0.35,
+        "meanCash": 12.2,
+        "meanTilesWon": 10.8,
+        "meanPaid": 166.3
+      }
+    },
+    "convert-18": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 75.4,
+        "meanPlace": 2.5,
+        "firstPlaceShare": 0.3,
+        "meanCash": 12,
+        "meanTilesWon": 11.8,
+        "meanPaid": 163.4
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 78.7,
+        "meanPlace": 2.1,
+        "firstPlaceShare": 0.5,
+        "meanCash": 9.4,
+        "meanTilesWon": 11.8,
+        "meanPaid": 169.3
+      }
+    },
+    "convert-19": {
+      "Vickrey": {
+        "games": 10,
+        "meanScore": 78.9,
+        "meanPlace": 2.6,
+        "firstPlaceShare": 0.3,
+        "meanCash": 10.8,
+        "meanTilesWon": 12,
+        "meanPaid": 168.1
+      },
+      "FirstPrice": {
+        "games": 10,
+        "meanScore": 76.4,
+        "meanPlace": 2.2,
+        "firstPlaceShare": 0.35,
+        "meanCash": 10,
+        "meanTilesWon": 11.3,
+        "meanPaid": 166.4
+      }
+    }
+  },
+  "validation": {
+    "convert-15": {
+      "Vickrey": {
+        "games": 20,
+        "meanScore": 68.8,
+        "meanPlace": 3.3,
+        "firstPlaceShare": 0.15,
+        "meanCash": 12.85,
+        "meanTilesWon": 10.95,
+        "meanPaid": 155.95
+      },
+      "FirstPrice": {
+        "games": 20,
+        "meanScore": 71.6,
+        "meanPlace": 2.85,
+        "firstPlaceShare": 0.25,
+        "meanCash": 10.5,
+        "meanTilesWon": 11.5,
+        "meanPaid": 161.1
+      }
+    },
+    "convert-06": {
+      "Vickrey": {
+        "games": 20,
+        "meanScore": 70.2,
+        "meanPlace": 3.2,
+        "firstPlaceShare": 0.2,
+        "meanCash": 13.1,
+        "meanTilesWon": 11.1,
+        "meanPaid": 157.1
+      },
+      "FirstPrice": {
+        "games": 20,
+        "meanScore": 71.65,
+        "meanPlace": 2.85,
+        "firstPlaceShare": 0.25,
+        "meanCash": 10,
+        "meanTilesWon": 11.7,
+        "meanPaid": 161.65
+      }
+    },
+    "convert-18": {
+      "Vickrey": {
+        "games": 20,
+        "meanScore": 69.8,
+        "meanPlace": 3.3,
+        "firstPlaceShare": 0.15,
+        "meanCash": 13.1,
+        "meanTilesWon": 11.2,
+        "meanPaid": 156.7
+      },
+      "FirstPrice": {
+        "games": 20,
+        "meanScore": 67.6,
+        "meanPlace": 3.3,
+        "firstPlaceShare": 0.125,
+        "meanCash": 8.9,
+        "meanTilesWon": 11.7,
+        "meanPaid": 158.7
+      }
+    }
+  },
+  "bestValidated": "convert-06",
+  "methodology": "20 options over market-convert; ten paired training bags per format, top three selected by Vickrey mean place then score, twenty disjoint validation bags per format; six active clients, alternating five convert rivals and five mixed market-family rivals; no idle bots; default five starting tiles; no final-tile redemption; immediate idealized reactions. Small local screening is not public proof."
+}

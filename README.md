@@ -69,4 +69,20 @@ docker build -t hackutd-scrabble .
 docker run --rm --env-file .env hackutd-scrabble
 ```
 
-The GitHub Actions workflow checks Node 22 and 24, tests, builds, and runs a small simulation. Generated bindings and the dictionary derive from MIT-licensed [clockworklabs/scrabblebot](https://github.com/clockworklabs/scrabblebot); see [LICENSE](LICENSE).
+The GitHub Actions workflow checks Node 22 and 24, tests, and builds. Generated bindings and the dictionary derive from MIT-licensed [clockworklabs/scrabblebot](https://github.com/clockworklabs/scrabblebot); see [LICENSE](LICENSE).
+
+## Live selection and competition runner
+
+The current production policy is `market-convert`, selected after public trials. It extends the acquisition floor with a cap exception for a tile that immediately completes a six-letter or longer word. The earlier cash cap repeatedly prevented profitable word completion in an audited public match. Results, including losses and idle-opponent caveats, are in [LIVE_RESULTS.md](docs/LIVE_RESULTS.md).
+
+`bigdawg` (bot 340) is the single tournament-2 entry. Separate test identities never register for the tournament. The public lab supports distinct policy labels and options, separate result files, staggered entry, match limits, and a wall-clock cutoff; it shares no racks or decisions between clients.
+
+On macOS, after building, the competition helper keeps the bot connected with automatic crash restart and inhibits idle sleep while the process runs. It waits for tournament seating and exits after elimination or tournament completion:
+
+```sh
+npm run competition:start -- market-convert
+npm run competition:status
+npm run competition:stop
+```
+
+It reads the token from `.env`; no credential is embedded in its launchd configuration. Keep the laptop powered and connected to the internet.

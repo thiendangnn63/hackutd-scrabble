@@ -19,7 +19,10 @@
     "provision:lab": "tsx scripts/provision-lab.ts",
     "public:lab": "tsx --env-file-if-exists=.env scripts/run-public-lab.ts",
     "live:report": "tsx scripts/live-report.ts",
-    "live:merge": "tsx scripts/merge-live.ts"
+    "live:merge": "tsx scripts/merge-live.ts",
+    "competition:start": "tsx scripts/competition-service.ts start",
+    "competition:stop": "tsx scripts/competition-service.ts stop",
+    "competition:status": "tsx scripts/competition-service.ts status"
   },
   "dependencies": {
     "spacetimedb": "2.12.0",

@@ -13,7 +13,7 @@ export interface StrategyContext {
   observedPrices?: number[];
   auctionDurationMs?: number;
 }
-export type StrategyMode = 'starter' | 'greedy' | 'hoard' | 'adaptive' | 'aggressive' | 'patient' | 'market' | 'market-focused' | 'market-all' | 'market-budget' | 'market-pressure' | 'market-margin' | 'market-quality';
+export type StrategyMode = 'starter' | 'greedy' | 'hoard' | 'adaptive' | 'aggressive' | 'patient' | 'market' | 'market-focused' | 'market-all' | 'market-budget' | 'market-pressure' | 'market-margin' | 'market-quality' | 'market-convert';
 export interface StrategyOptions { mode?: StrategyMode; bidScale?: number; holdGain?: number; floorMultiplier?: number; acquisitionReserve?: number; terminalSpend?: boolean }
 
 const VOWELS = new Set('AEIOU');
@@ -29,7 +29,7 @@ export class Strategy {
   private readonly terminalSpend: boolean;
   constructor(readonly engine: WordEngine, options: StrategyOptions | StrategyMode = {}) {
     if (typeof options === 'string') options = { mode: options };
-    this.mode = options.mode ?? 'market-all';
+    this.mode = options.mode ?? 'market-convert';
     this.floorMultiplier=options.floorMultiplier;
     this.acquisitionReserve=options.acquisitionReserve??0.65;
     this.terminalSpend=options.terminalSpend??false;
@@ -50,7 +50,8 @@ export class Strategy {
     const before = this.engine.best(ctx.myRack)?.score ?? 0;
     const afterRack = new Map(ctx.myRack);
     afterRack.set(letter, have + 1);
-    const after = this.engine.best(afterRack)?.score ?? 0;
+    const afterBest = this.engine.best(afterRack);
+    const after = afterBest?.score ?? 0;
     const nearBefore = this.engine.bestCompletion(ctx.myRack, 1)?.score ?? 0;
     const nearAfter = this.engine.bestCompletion(afterRack, 1)?.score ?? 0;
     const tiles = size(ctx.myRack);
@@ -74,7 +75,7 @@ export class Strategy {
     // Experimental public-match challenger: after redeeming a word, seed the
     // next rack with some scoring power instead of buying only cheap vowels.
     // The normal cash-fraction cap below still applies to this reservation.
-    if (this.mode === 'market-quality' && tiles <= 4 && ctx.remainingTiles >= 10 && have === 0 && face >= 3) {
+    if ((this.mode === 'market-quality' || this.mode === 'market-convert') && tiles <= 4 && ctx.remainingTiles >= 10 && have === 0 && face >= 3) {
       const improvesCompletion = readyGain > 0 || nearAfter > nearBefore;
       const qSupported = letter !== 'Q' || (ctx.myRack.get('U') ?? 0) > 0 || improvesCompletion;
       if (qSupported) {
@@ -89,7 +90,7 @@ export class Strategy {
     // but preserve enough liquidity for several future complement auctions.
     const capFraction = ctx.remainingTiles <= 5 ? 1 : ctx.remainingTiles <= 15 ? 0.65 : 0.38;
     if (ctx.remainingTiles <= 7 && readyGain > 0) value = Math.max(value, readyGain * 2.2);
-    const newMarket = this.mode === 'market-all' || this.mode === 'market-budget' || this.mode === 'market-pressure' || this.mode === 'market-margin' || this.mode === 'market-quality';
+    const newMarket = this.mode === 'market-all' || this.mode === 'market-budget' || this.mode === 'market-pressure' || this.mode === 'market-margin' || this.mode === 'market-quality' || this.mode === 'market-convert';
     if (ctx.auctionType === 'FirstPrice') value *= 0.7;
     if ((ctx.auctionType === 'FirstPrice' && (this.mode === 'market' || this.mode === 'market-focused')) || newMarket) {
       const prices=(ctx.observedPrices??[]).slice(-20).filter(p=>Number.isFinite(p)&&p>0).sort((a,b)=>a-b);
@@ -114,7 +115,14 @@ export class Strategy {
       value=Math.max(value,balance/remainingWins);
     }
     if(newMarket && ctx.remainingTiles===1 && readyGain===0) return 0;
-    return Math.min(balance, Math.max(0, Math.floor(Math.min(value, Math.max(1, balance * capFraction)))));
+    let cashCap = Math.max(1, balance * capFraction);
+    // Public match 47181 demonstrated a cash-positive seven-letter completion
+    // blocked by the speculative 38% cap. Release credit only against an
+    // immediately playable six-plus-letter payout, never against a near-word.
+    if (this.mode === 'market-convert' && readyGain > 0 && afterBest && afterBest.word.length >= 6) {
+      cashCap = Math.max(cashCap, Math.min(balance, afterBest.score));
+    }
+    return Math.min(balance, Math.max(0, Math.floor(Math.min(value, cashCap))));
   }
 
   chooseWord(ctx: StrategyContext): string | null {

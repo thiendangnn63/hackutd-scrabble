@@ -80,5 +80,5 @@ test('new acquisition floors do not buy a penultimate tile with no playable gain
 
 test('selected default applies acquisition floors to both auction formats', () => {
   const bot=new Strategy(engine);
-  assert.equal(bot.mode,'market-all');
+  assert.equal(bot.mode,'market-convert');
 });

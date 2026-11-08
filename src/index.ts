@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
 import { DbConnection, tables, type SubscriptionHandle } from './module_bindings/index.js';
 import { WordEngine, type Rack } from './engine.js';
-import { Strategy, type StrategyMode } from './strategy.js';
+import { Strategy, type StrategyMode, type StrategyOptions } from './strategy.js';
 import { ActionLoop, type MatchView } from './actions.js';
 import { MatchRecorder } from './telemetry.js';
 
@@ -20,16 +20,26 @@ const runOnce = process.argv.includes('--once');
 const matchLimitText = process.argv.find(arg => arg.startsWith('--matches='))?.slice(10);
 if (matchLimitText && (!/^\d+$/.test(matchLimitText) || Number(matchLimitText) < 1 || !Number.isSafeInteger(Number(matchLimitText)))) throw new Error('--matches must be a positive safe integer.');
 const matchLimit = runOnce ? 1 : matchLimitText ? Number(matchLimitText) : Infinity;
+const untilText = process.argv.find(arg => arg.startsWith('--until='))?.slice(8);
+const publicUntil = untilText ? Date.parse(untilText) : Infinity;
+if (Number.isNaN(publicUntil)) throw new Error('--until must be an ISO date-time.');
 const log = (message: string) => console.log(`[${new Date().toISOString()}] [${name}] ${message}`);
 const dictionary = readFileSync(fileURLToPath(new URL('../data/wordlist.txt', import.meta.url)), 'utf8').split(/\r?\n/).filter(Boolean);
 const started = performance.now();
 const engine = new WordEngine(dictionary);
-const modes: StrategyMode[] = ['starter', 'greedy', 'hoard', 'adaptive', 'aggressive', 'patient', 'market', 'market-focused', 'market-all', 'market-budget', 'market-pressure', 'market-margin', 'market-quality'];
+const modes: StrategyMode[] = ['starter', 'greedy', 'hoard', 'adaptive', 'aggressive', 'patient', 'market', 'market-focused', 'market-all', 'market-budget', 'market-pressure', 'market-margin', 'market-quality', 'market-convert'];
 const mode = process.env.STRATEGY_MODE;
 if (mode && !modes.includes(mode as StrategyMode)) throw new Error(`Unknown STRATEGY_MODE: ${mode}`);
-const strategy = new Strategy(engine, mode ? { mode: mode as StrategyMode } : {});
+const strategyOptions: StrategyOptions = process.env.STRATEGY_OPTIONS ? JSON.parse(process.env.STRATEGY_OPTIONS) : {};
+if (!strategyOptions || typeof strategyOptions !== 'object' || Array.isArray(strategyOptions)) throw new Error('STRATEGY_OPTIONS must be an object.');
+for (const [key, value] of Object.entries(strategyOptions)) {
+  if (key === 'terminalSpend' && typeof value === 'boolean') continue;
+  if (!['bidScale', 'holdGain', 'floorMultiplier', 'acquisitionReserve'].includes(key) || typeof value !== 'number' || !Number.isFinite(value) || value <= 0 || value > (key === 'acquisitionReserve' ? 1 : 5)) throw new Error(`Invalid strategy option ${key}`);
+}
+const strategy = new Strategy(engine, { ...strategyOptions, ...(mode ? { mode: mode as StrategyMode } : {}) });
+const policyName = process.env.POLICY_LABEL ?? strategy.mode;
 log(`indexed ${dictionary.length} official dictionary words in ${Math.round(performance.now() - started)}ms`);
-log(`strategy ${strategy.mode}`);
+log(`strategy ${policyName}`);
 const recorder = new MatchRecorder(process.env.RESULTS_FILE ?? resolve('.research/live-results.json'));
 let finished = 0;
 
@@ -107,7 +117,7 @@ function refresh(): void {
           const words = [...conn.db.wordPlay.iter()].filter(w => w.matchId === match.id && w.botId === myBotId);
           const place = 1 + opponents.filter(score => score > Number(mine.score)).length;
           recorder.record({
-            matchId: String(match.id), botId: String(myBotId), policy: strategy.mode, format: match.auctionType.tag,
+            matchId: String(match.id), botId: String(myBotId), policy: policyName, format: match.auctionType.tag,
             endedAt: match.endedAt ? new Date(Number(match.endedAt.microsSinceUnixEpoch / 1000n)).toISOString() : new Date().toISOString(),
             score: Number(mine.score), place, tableSize: participants.length,
             firstPlaceTies: [Number(mine.score), ...opponents].filter(score => score === top).length,
@@ -160,9 +170,20 @@ function refresh(): void {
     });
   }
   loop.tick(matches);
+  if (!running && tournamentId !== undefined && process.env.EXIT_AFTER_TOURNAMENT === '1') {
+    const tournament = conn.db.tournament.id.find(tournamentId);
+    const entry = [...conn.db.tournamentEntry.iter()].find(e => e.tournamentId === tournamentId && e.botId === myBotId);
+    if (entry?.eliminated || tournament?.status.tag === 'Ended' || tournament?.status.tag === 'ForceEnded') {
+      log(`tournament ${tournamentId} finished for this bot; stopping`); stop(); return;
+    }
+  }
   if (!running && !joining && Date.now() >= nextJoinAt && !tournamentOnly && !inActiveTournament()) {
     const lobby = [...conn.db.openLobbies.iter()].find(l => l.status.tag === 'Open');
     const alreadyJoined = lobby && [...conn.db.openLobbyMembers.iter()].some(m => m.lobbyId === lobby.id && m.botId === myBotId);
+    if (Date.now() >= publicUntil) {
+      if (!alreadyJoined) { log('public testing cutoff reached; stopping'); stop(); }
+      return;
+    }
     if (lobby && !alreadyJoined) {
       joining = true; nextJoinAt = Date.now() + 5000;
       void conn.reducers.joinLobby({}).then(() => log('joined lobby'), error => log(`lobby: ${String(error)}`))

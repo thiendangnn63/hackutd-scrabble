@@ -1,0 +1,1972 @@
+{
+  "schemaVersion": 1,
+  "matches": [
+    {
+      "matchId": "47181",
+      "botId": "340",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:21:08.724Z",
+      "score": 64,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 37,
+      "tilesWon": 11,
+      "totalPaid": 127,
+      "words": [
+        "DOGMATA",
+        "EQUAL",
+        "EON"
+      ],
+      "opponentScores": [
+        95,
+        41,
+        59,
+        45,
+        81
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47200",
+      "botId": "340",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:22:33.256Z",
+      "score": 60,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 22,
+      "tilesWon": 13,
+      "totalPaid": 138,
+      "words": [
+        "OUTFIELD",
+        "DEADEN",
+        "AS",
+        "TO"
+      ],
+      "opponentScores": [
+        59,
+        53,
+        78,
+        72,
+        91
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47219",
+      "botId": "340",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:23:54.096Z",
+      "score": 121,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 32,
+      "tilesWon": 16,
+      "totalPaid": 189,
+      "words": [
+        "QOPHS",
+        "SOYBEAN",
+        "FOZIER",
+        "AS"
+      ],
+      "opponentScores": [
+        36,
+        73,
+        53,
+        0,
+        71
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47002",
+      "botId": "340",
+      "policy": "market",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:07:06.105Z",
+      "score": 54,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 104,
+      "tilesWon": 3,
+      "totalPaid": 50,
+      "words": [
+        "BRAZENS"
+      ],
+      "opponentScores": [
+        98,
+        87,
+        86,
+        86,
+        54
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47068",
+      "botId": "340",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:12:30.949Z",
+      "score": 53,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 21,
+      "tilesWon": 10,
+      "totalPaid": 132,
+      "words": [
+        "SWEVEN",
+        "ENTERAL",
+        "AT"
+      ],
+      "opponentScores": [
+        119,
+        87,
+        83,
+        56,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47238",
+      "botId": "340",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:25:10.575Z",
+      "score": 55,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 31,
+      "tilesWon": 9,
+      "totalPaid": 124,
+      "words": [
+        "ADJOINT",
+        "LITER"
+      ],
+      "opponentScores": [
+        40,
+        86,
+        75,
+        48,
+        93
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47263",
+      "botId": "340",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:29.693Z",
+      "score": 63,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 16,
+      "tilesWon": 14,
+      "totalPaid": 147,
+      "words": [
+        "OVERSAD",
+        "YONDER",
+        "LI",
+        "LEU"
+      ],
+      "opponentScores": [
+        52,
+        95,
+        10,
+        84,
+        115
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47286",
+      "botId": "340",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:07.903Z",
+      "score": 76,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 14,
+      "tilesWon": 14,
+      "totalPaid": 162,
+      "words": [
+        "JOINDER",
+        "LAGOON",
+        "KAES",
+        "AN"
+      ],
+      "opponentScores": [
+        56,
+        118,
+        99,
+        41,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47181",
+      "botId": "350",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:21:08.724Z",
+      "score": 41,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 15,
+      "tilesWon": 10,
+      "totalPaid": 126,
+      "words": [
+        "DUNITES",
+        "ATONER",
+        "UT"
+      ],
+      "opponentScores": [
+        95,
+        64,
+        59,
+        45,
+        81
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47200",
+      "botId": "350",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:22:33.256Z",
+      "score": 78,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 31,
+      "tilesWon": 12,
+      "totalPaid": 147,
+      "words": [
+        "ZINGARI",
+        "INERTIA",
+        "EWE"
+      ],
+      "opponentScores": [
+        59,
+        53,
+        60,
+        72,
+        91
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47219",
+      "botId": "350",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:23:54.096Z",
+      "score": 53,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 20,
+      "tilesWon": 13,
+      "totalPaid": 133,
+      "words": [
+        "AERONAUT",
+        "DOWEL",
+        "VAW",
+        "AT"
+      ],
+      "opponentScores": [
+        36,
+        121,
+        73,
+        0,
+        71
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47238",
+      "botId": "350",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:25:10.575Z",
+      "score": 40,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 19,
+      "tilesWon": 10,
+      "totalPaid": 121,
+      "words": [
+        "PENTOSAN",
+        "RETRO"
+      ],
+      "opponentScores": [
+        86,
+        75,
+        48,
+        93,
+        55
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47264",
+      "botId": "350",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:32.597Z",
+      "score": 61,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 21,
+      "tilesWon": 11,
+      "totalPaid": 140,
+      "words": [
+        "OVERFAT",
+        "BAILEE",
+        "ER"
+      ],
+      "opponentScores": [
+        76,
+        53,
+        67,
+        49,
+        127
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47286",
+      "botId": "350",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:07.903Z",
+      "score": 56,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 15,
+      "tilesWon": 10,
+      "totalPaid": 141,
+      "words": [
+        "MEGAHIT",
+        "LATEEN",
+        "EN"
+      ],
+      "opponentScores": [
+        118,
+        76,
+        99,
+        41,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47181",
+      "botId": "351",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:21:08.724Z",
+      "score": 59,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 26,
+      "tilesWon": 11,
+      "totalPaid": 133,
+      "words": [
+        "HIPLINE",
+        "GOITER",
+        "AWA"
+      ],
+      "opponentScores": [
+        95,
+        64,
+        41,
+        45,
+        81
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47200",
+      "botId": "351",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:22:33.256Z",
+      "score": 72,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 15,
+      "tilesWon": 11,
+      "totalPaid": 157,
+      "words": [
+        "VERMUTH",
+        "FANION",
+        "AY"
+      ],
+      "opponentScores": [
+        59,
+        53,
+        78,
+        60,
+        91
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47219",
+      "botId": "351",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:23:54.096Z",
+      "score": 73,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 4,
+      "tilesWon": 14,
+      "totalPaid": 169,
+      "words": [
+        "HORDEIN",
+        "RAJES",
+        "MUTED"
+      ],
+      "opponentScores": [
+        36,
+        121,
+        53,
+        0,
+        71
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47239",
+      "botId": "351",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:25:17.077Z",
+      "score": 59,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 12,
+      "tilesWon": 12,
+      "totalPaid": 147,
+      "words": [
+        "ACOLYTE",
+        "AEONIC",
+        "ULU"
+      ],
+      "opponentScores": [
+        82,
+        76,
+        53,
+        70,
+        112
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47264",
+      "botId": "351",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:32.597Z",
+      "score": 49,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 10,
+      "tilesWon": 9,
+      "totalPaid": 139,
+      "words": [
+        "INGROWN",
+        "NOVAE"
+      ],
+      "opponentScores": [
+        76,
+        53,
+        67,
+        61,
+        127
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47287",
+      "botId": "351",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:10.264Z",
+      "score": 59,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 8,
+      "tilesWon": 12,
+      "totalPaid": 151,
+      "words": [
+        "EXTORTER",
+        "AREAL",
+        "LI",
+        "IN"
+      ],
+      "opponentScores": [
+        66,
+        55,
+        68,
+        65,
+        118
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47244",
+      "botId": "355",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:25:55.566Z",
+      "score": 78,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 13,
+      "tilesWon": 13,
+      "totalPaid": 165,
+      "words": [
+        "ADJOINT",
+        "ATROPIN",
+        "EARL"
+      ],
+      "opponentScores": [
+        77,
+        64,
+        102,
+        30,
+        63
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47265",
+      "botId": "355",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:35.313Z",
+      "score": 58,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 29,
+      "tilesWon": 10,
+      "totalPaid": 129,
+      "words": [
+        "LIBELER",
+        "QUARE",
+        "EON"
+      ],
+      "opponentScores": [
+        59,
+        57,
+        92,
+        88,
+        78
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47287",
+      "botId": "355",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:10.264Z",
+      "score": 65,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 10,
+      "tilesWon": 12,
+      "totalPaid": 155,
+      "words": [
+        "BOFFIN",
+        "AUTOING",
+        "LO",
+        "BI"
+      ],
+      "opponentScores": [
+        66,
+        59,
+        55,
+        68,
+        118
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47245",
+      "botId": "356",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:25:57.768Z",
+      "score": 80,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 2,
+      "finalCash": 20,
+      "tilesWon": 13,
+      "totalPaid": 160,
+      "words": [
+        "QUAHOG",
+        "AUBRETIA",
+        "RIN"
+      ],
+      "opponentScores": [
+        85,
+        63,
+        85,
+        72,
+        72
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47266",
+      "botId": "356",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:37.598Z",
+      "score": 67,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 11,
+      "tilesWon": 18,
+      "totalPaid": 156,
+      "words": [
+        "SAUCIER",
+        "REGRADE",
+        "ANTIS",
+        "NOR"
+      ],
+      "opponentScores": [
+        112,
+        0,
+        103,
+        0,
+        63
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47288",
+      "botId": "356",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:12.359Z",
+      "score": 72,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 19,
+      "tilesWon": 12,
+      "totalPaid": 153,
+      "words": [
+        "EMPTIER",
+        "INVITER",
+        "EX"
+      ],
+      "opponentScores": [
+        96,
+        58,
+        70,
+        69,
+        73
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47246",
+      "botId": "357",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:00.121Z",
+      "score": 83,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 2,
+      "finalCash": 4,
+      "tilesWon": 15,
+      "totalPaid": 179,
+      "words": [
+        "DOZING",
+        "BONITOES",
+        "ABUT",
+        "ER"
+      ],
+      "opponentScores": [
+        49,
+        65,
+        66,
+        83,
+        72
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47267",
+      "botId": "357",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:38.850Z",
+      "score": 76,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 14,
+      "tilesWon": 12,
+      "totalPaid": 162,
+      "words": [
+        "QUAHOG",
+        "TOLIDINE",
+        "ER"
+      ],
+      "opponentScores": [
+        47,
+        62,
+        56,
+        97,
+        75
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47289",
+      "botId": "357",
+      "policy": "market-all",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:14.066Z",
+      "score": 87,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 13,
+      "tilesWon": 14,
+      "totalPaid": 174,
+      "words": [
+        "HALAZONE",
+        "ERINGOS",
+        "ART"
+      ],
+      "opponentScores": [
+        58,
+        69,
+        45,
+        86,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47246",
+      "botId": "358",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:00.121Z",
+      "score": 72,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 2,
+      "finalCash": 19,
+      "tilesWon": 11,
+      "totalPaid": 153,
+      "words": [
+        "QINDAR",
+        "AVENGE",
+        "DUIT"
+      ],
+      "opponentScores": [
+        49,
+        65,
+        66,
+        83,
+        83
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47267",
+      "botId": "358",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:38.850Z",
+      "score": 47,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 18,
+      "tilesWon": 10,
+      "totalPaid": 129,
+      "words": [
+        "WOOLERS",
+        "ENSOUL",
+        "AT"
+      ],
+      "opponentScores": [
+        62,
+        56,
+        97,
+        75,
+        76
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47289",
+      "botId": "358",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:14.066Z",
+      "score": 53,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 13,
+      "tilesWon": 10,
+      "totalPaid": 140,
+      "words": [
+        "FLOUTED",
+        "INSURE",
+        "AW"
+      ],
+      "opponentScores": [
+        58,
+        69,
+        45,
+        86,
+        87
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47247",
+      "botId": "359",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:03.421Z",
+      "score": 88,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 19,
+      "tilesWon": 16,
+      "totalPaid": 169,
+      "words": [
+        "WAKANDA",
+        "OUTHIT",
+        "ANTA",
+        "FEZ"
+      ],
+      "opponentScores": [
+        82,
+        0,
+        70,
+        0,
+        109
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47268",
+      "botId": "359",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:41.822Z",
+      "score": 43,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 17,
+      "tilesWon": 11,
+      "totalPaid": 126,
+      "words": [
+        "AUTEURIST",
+        "MONIE",
+        "OR"
+      ],
+      "opponentScores": [
+        75,
+        73,
+        45,
+        115,
+        68
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47290",
+      "botId": "359",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:15.609Z",
+      "score": 46,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 13,
+      "tilesWon": 10,
+      "totalPaid": 133,
+      "words": [
+        "CUITTLE",
+        "AGOROT",
+        "IN"
+      ],
+      "opponentScores": [
+        84,
+        75,
+        64,
+        86,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47247",
+      "botId": "360",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:03.421Z",
+      "score": 70,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 4,
+      "tilesWon": 16,
+      "totalPaid": 166,
+      "words": [
+        "ANTILIFE",
+        "JOLES",
+        "DAGO",
+        "RIG"
+      ],
+      "opponentScores": [
+        82,
+        88,
+        0,
+        0,
+        109
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47268",
+      "botId": "360",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:41.822Z",
+      "score": 68,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 3,
+      "tilesWon": 14,
+      "totalPaid": 165,
+      "words": [
+        "BIRCHES",
+        "INUTILE",
+        "AN",
+        "AG"
+      ],
+      "opponentScores": [
+        75,
+        73,
+        45,
+        115,
+        43
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47290",
+      "botId": "360",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:15.609Z",
+      "score": 53,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 21,
+      "tilesWon": 11,
+      "totalPaid": 132,
+      "words": [
+        "WANION",
+        "ORANGIER",
+        "BE"
+      ],
+      "opponentScores": [
+        46,
+        84,
+        75,
+        64,
+        86
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47249",
+      "botId": "361",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:07.291Z",
+      "score": 90,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 7,
+      "tilesWon": 18,
+      "totalPaid": 183,
+      "words": [
+        "LOVEBUG",
+        "POTENCE",
+        "RULIER",
+        "DE"
+      ],
+      "opponentScores": [
+        78,
+        0,
+        105,
+        0,
+        92
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47270",
+      "botId": "361",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:45.539Z",
+      "score": 32,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 21,
+      "tilesWon": 8,
+      "totalPaid": 111,
+      "words": [
+        "AEROGEL",
+        "INTO",
+        "TO"
+      ],
+      "opponentScores": [
+        74,
+        0,
+        128,
+        83,
+        91
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47292",
+      "botId": "361",
+      "policy": "market-margin",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:20.299Z",
+      "score": 68,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 24,
+      "tilesWon": 11,
+      "totalPaid": 144,
+      "words": [
+        "JEERERS",
+        "DENARII",
+        "AR"
+      ],
+      "opponentScores": [
+        36,
+        90,
+        83,
+        52,
+        78
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47249",
+      "botId": "362",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:07.291Z",
+      "score": 92,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 15,
+      "tilesWon": 15,
+      "totalPaid": 177,
+      "words": [
+        "RHYTHM",
+        "JADED",
+        "CONGE",
+        "AVA"
+      ],
+      "opponentScores": [
+        78,
+        90,
+        0,
+        105,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47270",
+      "botId": "362",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:45.539Z",
+      "score": 91,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 8,
+      "tilesWon": 16,
+      "totalPaid": 183,
+      "words": [
+        "PIQUED",
+        "AFEARED",
+        "BOUT",
+        "RID"
+      ],
+      "opponentScores": [
+        74,
+        0,
+        128,
+        32,
+        83
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47292",
+      "botId": "362",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:20.299Z",
+      "score": 78,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 15,
+      "tilesWon": 12,
+      "totalPaid": 163,
+      "words": [
+        "ZOFTIG",
+        "AUCTION",
+        "EN",
+        "US"
+      ],
+      "opponentScores": [
+        36,
+        90,
+        83,
+        68,
+        52
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47249",
+      "botId": "363",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:07.291Z",
+      "score": 78,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 2,
+      "tilesWon": 16,
+      "totalPaid": 176,
+      "words": [
+        "SEAWANT",
+        "ZITIS",
+        "KEPI",
+        "TUI",
+        "ER"
+      ],
+      "opponentScores": [
+        90,
+        0,
+        105,
+        0,
+        92
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47270",
+      "botId": "363",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:45.539Z",
+      "score": 83,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 26,
+      "tilesWon": 12,
+      "totalPaid": 157,
+      "words": [
+        "ANYWAYS",
+        "FAXES",
+        "ENS",
+        "OR"
+      ],
+      "opponentScores": [
+        74,
+        0,
+        128,
+        32,
+        91
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47292",
+      "botId": "363",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:20.299Z",
+      "score": 52,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 14,
+      "tilesWon": 11,
+      "totalPaid": 138,
+      "words": [
+        "LOYALER",
+        "ALBINO",
+        "UT"
+      ],
+      "opponentScores": [
+        36,
+        90,
+        83,
+        68,
+        78
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47250",
+      "botId": "364",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:10.562Z",
+      "score": 99,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 8,
+      "tilesWon": 21,
+      "totalPaid": 191,
+      "words": [
+        "FAQUIR",
+        "ELASTIN",
+        "TURBIT",
+        "WILT",
+        "GO"
+      ],
+      "opponentScores": [
+        0,
+        0,
+        112,
+        0,
+        180
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47271",
+      "botId": "364",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:51.730Z",
+      "score": 72,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 13,
+      "tilesWon": 13,
+      "totalPaid": 159,
+      "words": [
+        "LAVALIKE",
+        "HELOTS",
+        "CAN"
+      ],
+      "opponentScores": [
+        27,
+        93,
+        0,
+        100,
+        107
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47293",
+      "botId": "364",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:25.994Z",
+      "score": 54,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 14,
+      "tilesWon": 12,
+      "totalPaid": 140,
+      "words": [
+        "AGOUTIES",
+        "ROTARY",
+        "HI"
+      ],
+      "opponentScores": [
+        58,
+        20,
+        58,
+        52,
+        71
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47250",
+      "botId": "365",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:10.562Z",
+      "score": 112,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 16,
+      "tilesWon": 21,
+      "totalPaid": 196,
+      "words": [
+        "COENURE",
+        "COOEYED",
+        "WEDGED",
+        "LUX",
+        "MM"
+      ],
+      "opponentScores": [
+        0,
+        99,
+        0,
+        0,
+        180
+      ],
+      "errors": 1
+    },
+    {
+      "matchId": "47271",
+      "botId": "365",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:51.730Z",
+      "score": 93,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 3,
+      "tilesWon": 18,
+      "totalPaid": 190,
+      "words": [
+        "PIQUANT",
+        "ARRAIGN",
+        "EVER",
+        "OR",
+        "GO"
+      ],
+      "opponentScores": [
+        27,
+        72,
+        0,
+        100,
+        107
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47293",
+      "botId": "365",
+      "policy": "market-quality",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:25.994Z",
+      "score": 71,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 27,
+      "tilesWon": 11,
+      "totalPaid": 144,
+      "words": [
+        "BEESWAX",
+        "LORAN",
+        "DON"
+      ],
+      "opponentScores": [
+        54,
+        58,
+        20,
+        58,
+        52
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47251",
+      "botId": "366",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:12.758Z",
+      "score": 103,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 4,
+      "tilesWon": 21,
+      "totalPaid": 199,
+      "words": [
+        "WEENIER",
+        "DOGFISH",
+        "BETH",
+        "YONI",
+        "DE",
+        "IS"
+      ],
+      "opponentScores": [
+        0,
+        0,
+        186,
+        0,
+        84
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47271",
+      "botId": "366",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:51.730Z",
+      "score": 107,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 12,
+      "tilesWon": 16,
+      "totalPaid": 195,
+      "words": [
+        "DIZENED",
+        "WOODING",
+        "HEFT",
+        "IN"
+      ],
+      "opponentScores": [
+        27,
+        72,
+        93,
+        0,
+        100
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47293",
+      "botId": "366",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:25.994Z",
+      "score": 58,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 6,
+      "tilesWon": 13,
+      "totalPaid": 152,
+      "words": [
+        "PULLEY",
+        "DECIDE",
+        "EARN"
+      ],
+      "opponentScores": [
+        54,
+        58,
+        20,
+        52,
+        71
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47251",
+      "botId": "367",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:12.758Z",
+      "score": 84,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 6,
+      "tilesWon": 18,
+      "totalPaid": 178,
+      "words": [
+        "FRONTAL",
+        "VOTABLE",
+        "WAIN",
+        "DUG",
+        "DO"
+      ],
+      "opponentScores": [
+        0,
+        0,
+        103,
+        186,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47271",
+      "botId": "367",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:51.730Z",
+      "score": 100,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 22,
+      "tilesWon": 16,
+      "totalPaid": 178,
+      "words": [
+        "COMFITS",
+        "MIXUP",
+        "ALARY",
+        "JEE"
+      ],
+      "opponentScores": [
+        27,
+        72,
+        93,
+        0,
+        107
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47293",
+      "botId": "367",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:25.994Z",
+      "score": 52,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 12,
+      "tilesWon": 12,
+      "totalPaid": 140,
+      "words": [
+        "MORAINE",
+        "TINIEST",
+        "AM"
+      ],
+      "opponentScores": [
+        54,
+        58,
+        20,
+        58,
+        71
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47252",
+      "botId": "368",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:14.655Z",
+      "score": 54,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 3,
+      "tilesWon": 13,
+      "totalPaid": 151,
+      "words": [
+        "ANISEED",
+        "FERINE",
+        "AVO",
+        "ET"
+      ],
+      "opponentScores": [
+        86,
+        74,
+        79,
+        62,
+        52
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47272",
+      "botId": "368",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:53.202Z",
+      "score": 81,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 10,
+      "tilesWon": 14,
+      "totalPaid": 171,
+      "words": [
+        "MELODIA",
+        "QUOIT",
+        "PIETA",
+        "AX"
+      ],
+      "opponentScores": [
+        78,
+        66,
+        62,
+        79,
+        64
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47294",
+      "botId": "368",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:27.053Z",
+      "score": 103,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 11,
+      "tilesWon": 15,
+      "totalPaid": 192,
+      "words": [
+        "SNEEZER",
+        "INJURED",
+        "MOT",
+        "AW"
+      ],
+      "opponentScores": [
+        87,
+        21,
+        62,
+        56,
+        66
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47253",
+      "botId": "369",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:16.928Z",
+      "score": 105,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 24,
+      "tilesWon": 12,
+      "totalPaid": 181,
+      "words": [
+        "MENAZON",
+        "QUININE",
+        "OIL"
+      ],
+      "opponentScores": [
+        96,
+        55,
+        75,
+        78,
+        62
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47273",
+      "botId": "369",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:55.215Z",
+      "score": 42,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 19,
+      "tilesWon": 11,
+      "totalPaid": 123,
+      "words": [
+        "INTERLUNAR",
+        "DANIO"
+      ],
+      "opponentScores": [
+        100,
+        0,
+        60,
+        117,
+        85
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47295",
+      "botId": "369",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:28.554Z",
+      "score": 93,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 6,
+      "tilesWon": 18,
+      "totalPaid": 187,
+      "words": [
+        "EXUVIAL",
+        "BEMOAN",
+        "NAPE",
+        "OES",
+        "CUR"
+      ],
+      "opponentScores": [
+        100,
+        0,
+        0,
+        0,
+        195
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47253",
+      "botId": "370",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:16.928Z",
+      "score": 55,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 20,
+      "tilesWon": 11,
+      "totalPaid": 135,
+      "words": [
+        "OUTVOTED",
+        "LOGIER",
+        "EN"
+      ],
+      "opponentScores": [
+        96,
+        105,
+        75,
+        78,
+        62
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47273",
+      "botId": "370",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:55.215Z",
+      "score": 60,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 7,
+      "tilesWon": 12,
+      "totalPaid": 153,
+      "words": [
+        "LUETICS",
+        "EGGERS",
+        "JO",
+        "BO"
+      ],
+      "opponentScores": [
+        100,
+        0,
+        42,
+        117,
+        85
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47295",
+      "botId": "370",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:28.554Z",
+      "score": 195,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 48,
+      "tilesWon": 35,
+      "totalPaid": 247,
+      "words": [
+        "WALTZERS",
+        "THRIVED",
+        "DOUPIONI",
+        "KAINIT",
+        "GANGLY",
+        "FEE",
+        "NU"
+      ],
+      "opponentScores": [
+        93,
+        100,
+        0,
+        0,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47254",
+      "botId": "371",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:26:21.940Z",
+      "score": 80,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 35,
+      "tilesWon": 13,
+      "totalPaid": 145,
+      "words": [
+        "PIKEMEN",
+        "DELIMIT",
+        "OW"
+      ],
+      "opponentScores": [
+        73,
+        66,
+        7,
+        74,
+        124
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47275",
+      "botId": "371",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:27:59.427Z",
+      "score": 164,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 91,
+      "tilesWon": 33,
+      "totalPaid": 173,
+      "words": [
+        "FRIEZES",
+        "AGMINATE",
+        "BOOGIED",
+        "OVARIAN",
+        "NU",
+        "UT",
+        "PE",
+        "AG"
+      ],
+      "opponentScores": [
+        0,
+        0,
+        0,
+        204,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47297",
+      "botId": "371",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:29:32.940Z",
+      "score": 371,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 405,
+      "tilesWon": 66,
+      "totalPaid": 66,
+      "words": [
+        "EXPORT",
+        "DELATED",
+        "SQUINNY",
+        "VISCID",
+        "THEELIN",
+        "ORGANZA",
+        "PITIFUL",
+        "TEAMWORK",
+        "CELOMATA",
+        "JOG",
+        "EAU",
+        "OR"
+      ],
+      "opponentScores": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "errors": 0
+    }
+  ]
+}
