@@ -34,7 +34,7 @@ if (action === 'stop') {
     if (!entry.options || typeof entry.options !== 'object' || Array.isArray(entry.options)) throw new Error('Public configuration options must be an object.');
     selectedLabel = entry.label;
     for (const [key, value] of Object.entries(entry.options)) {
-      if ((key === 'terminalSpend' || key === 'letterPrices') && typeof value === 'boolean') { selectedOptions[key] = value; continue; }
+      if ((key === 'terminalSpend' || key === 'letterPrices' || key === 'lastUsableAllIn') && typeof value === 'boolean') { selectedOptions[key] = value; continue; }
       if (!['bidScale', 'holdGain', 'floorMultiplier', 'acquisitionReserve'].includes(key) || typeof value !== 'number' || !Number.isFinite(value) || value <= 0 || value > 5) throw new Error(`Invalid public strategy option ${key}; numeric values must be >0 and <=5.`);
       selectedOptions[key] = value;
     }
@@ -42,8 +42,9 @@ if (action === 'stop') {
   mkdirSync(directory, { recursive: true });
   const xml = (text: string) => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
   const publicUntil = process.argv.find(arg => arg.startsWith('--public-until='))?.slice(15);
+  const continuousPublic = process.argv.includes('--public');
   if (publicUntil && !Number.isFinite(Date.parse(publicUntil))) throw new Error('--public-until must be an ISO timestamp.');
-  const env = { BOT_NAME: 'bigdawg', STRATEGY_MODE: policy, STRATEGY_OPTIONS: JSON.stringify(selectedOptions), POLICY_LABEL: selectedLabel, TOURNAMENT_ID: tournamentId, TOURNAMENT_ONLY: publicUntil ? '0' : '1', EXIT_AFTER_TOURNAMENT: '1', RESULTS_FILE: resolve('.research/live-340.json') };
+  const env = { BOT_NAME: 'bigdawg', STRATEGY_MODE: policy, STRATEGY_OPTIONS: JSON.stringify(selectedOptions), POLICY_LABEL: selectedLabel, TOURNAMENT_ID: tournamentId, TOURNAMENT_ONLY: publicUntil || continuousPublic ? '0' : '1', EXIT_AFTER_TOURNAMENT: continuousPublic ? '0' : '1', RESULTS_FILE: resolve('.research/live-340.json') };
   const args = ['/usr/bin/caffeinate', '-i', process.execPath, '--env-file-if-exists=.env', resolve('dist/bot.mjs')];
   if (publicUntil) args.push(`--until=${publicUntil}`);
   writeFileSync(plist, `<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict>
@@ -74,5 +75,5 @@ if (action === 'stop') {
     if (remaining > 0) Atomics.wait(pause, 0, 0, Math.min(100, remaining));
   }
   if (!loaded) throw new Error(`Competition runner reload failed after bounded retries: ${lastError}`);
-  console.log(`Competition runner started: ${selectedLabel} (${policy}); ${publicUntil ? `public practice until ${publicUntil}, then tournament ${tournamentId} seating` : `tournament ${tournamentId} only`}; automatic crash restart; idle sleep inhibited while it runs.`);
+  console.log(`Competition runner started: ${selectedLabel} (${policy}); ${continuousPublic ? `rolling public lobbies while tournament ${tournamentId} permits` : publicUntil ? `public practice until ${publicUntil}, then tournament ${tournamentId} seating` : `tournament ${tournamentId} only`}; automatic crash restart; idle sleep inhibited while it runs.`);
 } else throw new Error('Action must be start, stop or status.');

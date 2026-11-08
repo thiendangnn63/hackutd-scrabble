@@ -1,0 +1,82 @@
+{
+  "complete": true,
+  "current": {
+    "label": "evo-final-0-letter-price-v1",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 1.2,
+      "bidScale": 1.6,
+      "holdGain": 1.3,
+      "terminalSpend": false,
+      "letterPrices": true
+    }
+  },
+  "seedBase": 201000001,
+  "actualFullMatches": 2016,
+  "methodology": "1008 fresh common bags = 84 full cycles of all six seats \u00d7 two strong current-letter-price fields, Vickrey. Before last usable auction policies produce identical full bid/word traces. Candidate alone bids remaining confirmed cash only on positive immediate completion at remainingTiles=1; no future scoring tile exists and cash has zero terminal score. No idle/empirical opponents. Exact dictionary, floor score, affordability assertions and final-tile restriction. Idealized immediate client reactions.",
+  "baselineSummary": {
+    "games": 1008,
+    "meanPlace": 3.4206349206349205,
+    "meanScore": 72.05357142857143,
+    "wins": 185,
+    "lasts": 185,
+    "strictLasts": 176,
+    "cash": 21.04563492063492
+  },
+  "candidateSummary": {
+    "games": 1008,
+    "meanPlace": 3.4107142857142856,
+    "meanScore": 72.20436507936508,
+    "wins": 187,
+    "lasts": 183,
+    "strictLasts": 174,
+    "cash": 20.51984126984127
+  },
+  "paired": {
+    "place": {
+      "mean": -0.00992063492063492,
+      "ci95": [
+        -0.01604196889161446,
+        -0.0037993009496553815
+      ]
+    },
+    "score": {
+      "mean": 0.15079365079365079,
+      "ci95": [
+        0.10742020384672721,
+        0.19416709774057436
+      ]
+    },
+    "first": {
+      "mean": 0.001984126984126984,
+      "ci95": [
+        -0.0007643670091021194,
+        0.0047326209773560874
+      ]
+    },
+    "last": {
+      "mean": -0.001984126984126984,
+      "ci95": [
+        -0.004732620977356102,
+        0.0007643670091021341
+      ]
+    }
+  },
+  "opportunities": 220,
+  "raises": 165,
+  "decisionLatencyMs": {
+    "p99": 0.1671249999999418,
+    "max": 9.744542000000365
+  },
+  "cpuMs": 25872.668,
+  "elapsedMs": 25718.460417,
+  "preTerminalTraceFailures": 0,
+  "scoreRegressions": 0,
+  "placeRegressions": 0,
+  "positiveScoreCases": 55,
+  "improvedPlaceCases": 10,
+  "casesPerSeatFieldCell": 84,
+  "monotonicityReason": "Only the last usable auction changes; the following final award cannot be redeemed and unspent cash has zero terminal score. If a higher bid changes the winner, this bot acquires a tile enabling a positive legal word; if it already won, lower remaining cash cannot affect a later scoring auction. All existing words were flushed before this bid. This argument assumes the source endgame contract and enough final-auction network time to redeem the newly won tile.",
+  "productionChanged": true,
+  "promotedLabel": "evo-final-0-letter-price-v2"
+}

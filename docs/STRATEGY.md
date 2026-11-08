@@ -1,6 +1,8 @@
 # Strategy and experiments
 
-The frozen production baseline is now `market-all`: indexed marginal word value plus a cash-budget and observed-price acquisition floor in both auction formats. Public matches now govern further testing and changes, at the owner's request. The earlier offline scores below are historical experiment results, not evidence of live superiority. `market-margin` is an explicit public-test challenger, not the default.
+Current production profile: **`evo-final-0-letter-price-v2`**, with explicit public letter-price history and a last-usable-auction cash rule. See [letter-price confirmation](LETTER_PRICE_IMPROVEMENT.md), [terminal-v2 evidence](TERMINAL_V2.md), and [the public match audit](PUBLIC_47739_AUDIT.md). Earlier benchmark sections below describe historical candidates.
+
+The current production policy is `evo-final-0-letter-price-v2`: indexed word valuation, cash-aware acquisition, explicit public per-letter price history, and a last-usable-auction cash rule. Promotions use fresh paired local validation and public match observation. Earlier sections below retain historical experiments and do not establish live superiority.
 
 ## Live validation and the Vickrey bootstrap fix
 

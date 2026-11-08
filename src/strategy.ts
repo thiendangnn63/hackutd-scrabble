@@ -16,7 +16,7 @@ export interface StrategyContext {
   recentAuctionPrices?: readonly PublicAuctionPrice[];
 }
 export type StrategyMode = 'starter' | 'greedy' | 'hoard' | 'adaptive' | 'aggressive' | 'patient' | 'market' | 'market-focused' | 'market-all' | 'market-budget' | 'market-pressure' | 'market-margin' | 'market-quality' | 'market-convert';
-export interface StrategyOptions { mode?: StrategyMode; bidScale?: number; holdGain?: number; floorMultiplier?: number; acquisitionReserve?: number; terminalSpend?: boolean; letterPrices?: boolean }
+export interface StrategyOptions { mode?: StrategyMode; bidScale?: number; holdGain?: number; floorMultiplier?: number; acquisitionReserve?: number; terminalSpend?: boolean; letterPrices?: boolean; lastUsableAllIn?: boolean }
 
 const VOWELS = new Set('AEIOU');
 const size = (rack: Rack): number => [...rack.values()].reduce((a, b) => a + b, 0);
@@ -30,6 +30,7 @@ export class Strategy {
   private readonly acquisitionReserve: number;
   private readonly terminalSpend: boolean;
   private readonly useLetterPrices: boolean;
+  private readonly lastUsableAllIn: boolean;
   constructor(readonly engine: WordEngine, options: StrategyOptions | StrategyMode = {}) {
     if (typeof options === 'string') options = { mode: options };
     this.mode = options.mode ?? 'market-convert';
@@ -37,6 +38,7 @@ export class Strategy {
     this.acquisitionReserve=options.acquisitionReserve??0.65;
     this.terminalSpend=options.terminalSpend??false;
     this.useLetterPrices=options.letterPrices??false;
+    this.lastUsableAllIn=options.lastUsableAllIn??false;
     this.bidScale = options.bidScale ?? ((this.mode === 'aggressive' || this.mode === 'market' || this.mode === 'market-focused' || this.mode.startsWith('market-')) ? 1.6 : this.mode === 'patient' ? 0.8 : 1.15);
     this.holdGain = options.holdGain ?? (this.mode === 'patient' ? 1.12 : (this.mode === 'aggressive' || this.mode === 'market' || this.mode === 'market-focused' || this.mode.startsWith('market-')) ? 1.5 : 1.3);
   }
@@ -71,6 +73,9 @@ export class Strategy {
     const potentialAfter = Math.max(after, nearAfter * 0.65 * horizon);
     const marginal = Math.max(0, potentialAfter - potentialBefore);
     const readyGain = Math.max(0, after - before);
+    // One usable purchase remains. Unspent cash has no terminal score value;
+    // an immediate scoring completion cannot crowd out a later scoring tile.
+    if (this.lastUsableAllIn && ctx.remainingTiles === 1 && readyGain > 0) return balance;
     const duplicatePenalty = Math.max(0, have - 1) * 2;
     const useful = nearAfter > 0 || after > 0;
     let value = (useful ? 3.5 : 1.5) + balanceBonus + marginal * this.bidScale + readyGain * 0.32 - duplicatePenalty;
