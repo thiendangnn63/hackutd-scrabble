@@ -1,11 +1,11 @@
 {
-  "label": "evo-final-0-letter-price-quality-v3",
+  "label": "evo-final-0-letter-price-quality-v4",
   "options": {
-    "floorMultiplier": 1,
+    "floorMultiplier": 1.6,
     "acquisitionReserve": 1.2,
     "bidScale": 1.6,
-    "holdGain": 1.3,
-    "terminalSpend": false,
+    "holdGain": 1.12,
+    "terminalSpend": true,
     "letterPrices": true,
     "lastUsableAllIn": true,
     "qualityAcquisition": true
