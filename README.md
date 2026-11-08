@@ -80,7 +80,7 @@ The current production policy is `market-convert`, selected after public trials.
 On macOS, after building, the competition helper keeps the bot connected with automatic crash restart and inhibits idle sleep while the process runs. It waits for tournament seating and exits after elimination or tournament completion:
 
 ```sh
-npm run competition:start -- market-convert
+npm run competition:start -- market-convert --options-file=docs/selected-config.json
 npm run competition:status
 npm run competition:stop
 ```

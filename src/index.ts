@@ -34,10 +34,12 @@ const strategyOptions: StrategyOptions = process.env.STRATEGY_OPTIONS ? JSON.par
 if (!strategyOptions || typeof strategyOptions !== 'object' || Array.isArray(strategyOptions)) throw new Error('STRATEGY_OPTIONS must be an object.');
 for (const [key, value] of Object.entries(strategyOptions)) {
   if (key === 'terminalSpend' && typeof value === 'boolean') continue;
-  if (!['bidScale', 'holdGain', 'floorMultiplier', 'acquisitionReserve'].includes(key) || typeof value !== 'number' || !Number.isFinite(value) || value <= 0 || value > (key === 'acquisitionReserve' ? 1 : 5)) throw new Error(`Invalid strategy option ${key}`);
+  if (!['bidScale', 'holdGain', 'floorMultiplier', 'acquisitionReserve'].includes(key) || typeof value !== 'number' || !Number.isFinite(value) || value <= 0 || value > 5) throw new Error(`Invalid strategy option ${key}`);
 }
-const strategy = new Strategy(engine, { ...strategyOptions, ...(mode ? { mode: mode as StrategyMode } : {}) });
-const policyName = process.env.POLICY_LABEL ?? strategy.mode;
+const useProductionProfile = !mode && !process.env.STRATEGY_OPTIONS;
+const productionProfile = JSON.parse(readFileSync(fileURLToPath(new URL('../data/production-policy.json', import.meta.url)), 'utf8')) as { label: string; options: StrategyOptions };
+const strategy = new Strategy(engine, { ...(useProductionProfile ? productionProfile.options : strategyOptions), ...(mode ? { mode: mode as StrategyMode } : {}) });
+const policyName = process.env.POLICY_LABEL ?? (useProductionProfile ? productionProfile.label : strategy.mode);
 log(`indexed ${dictionary.length} official dictionary words in ${Math.round(performance.now() - started)}ms`);
 log(`strategy ${policyName}`);
 const recorder = new MatchRecorder(process.env.RESULTS_FILE ?? resolve('.research/live-results.json'));
@@ -52,6 +54,7 @@ let stopped = false;
 let queued = false;
 let joining = false;
 let nextJoinAt = 0;
+let publicPracticeClosed = false;
 const scopes = new Map<bigint, { handle: SubscriptionHandle; ready: boolean }>();
 const completed = new Set<bigint>();
 const errorsByMatch = new Map<bigint, number>();
@@ -181,7 +184,12 @@ function refresh(): void {
     const lobby = [...conn.db.openLobbies.iter()].find(l => l.status.tag === 'Open');
     const alreadyJoined = lobby && [...conn.db.openLobbyMembers.iter()].some(m => m.lobbyId === lobby.id && m.botId === myBotId);
     if (Date.now() >= publicUntil) {
-      if (!alreadyJoined) { log('public testing cutoff reached; stopping'); stop(); }
+      if (!alreadyJoined) {
+        if (tournamentId !== undefined) {
+          if (!publicPracticeClosed) log('public practice cutoff reached; staying connected for tournament seating');
+          publicPracticeClosed = true;
+        } else { log('public testing cutoff reached; stopping'); stop(); }
+      }
       return;
     }
     if (lobby && !alreadyJoined) {

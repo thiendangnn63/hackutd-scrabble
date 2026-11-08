@@ -1,0 +1,56 @@
+[
+  {
+    "island": 0,
+    "generations": 10,
+    "completeScreenEvaluations": 197,
+    "screenGames": 7092,
+    "retainedCompleteHoldouts": 13,
+    "holdoutGames": 1560,
+    "cpuSeconds": 149.787459
+  },
+  {
+    "island": 1,
+    "generations": 10,
+    "completeScreenEvaluations": 195,
+    "screenGames": 7020,
+    "retainedCompleteHoldouts": 14,
+    "holdoutGames": 1680,
+    "cpuSeconds": 149.94625200000002
+  },
+  {
+    "island": 2,
+    "generations": 10,
+    "completeScreenEvaluations": 200,
+    "screenGames": 7200,
+    "retainedCompleteHoldouts": 13,
+    "holdoutGames": 1560,
+    "cpuSeconds": 150.149664
+  },
+  {
+    "island": 3,
+    "generations": 11,
+    "completeScreenEvaluations": 201,
+    "screenGames": 7236,
+    "retainedCompleteHoldouts": 12,
+    "holdoutGames": 1440,
+    "cpuSeconds": 150.06835
+  },
+  {
+    "island": 4,
+    "generations": 10,
+    "completeScreenEvaluations": 195,
+    "screenGames": 7020,
+    "retainedCompleteHoldouts": 14,
+    "holdoutGames": 1680,
+    "cpuSeconds": 150.21556
+  },
+  {
+    "island": 5,
+    "generations": 10,
+    "completeScreenEvaluations": 188,
+    "screenGames": 6768,
+    "retainedCompleteHoldouts": 16,
+    "holdoutGames": 1920,
+    "cpuSeconds": 149.88578
+  }
+]

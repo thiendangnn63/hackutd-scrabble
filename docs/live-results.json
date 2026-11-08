@@ -1967,6 +1967,1160 @@
         0
       ],
       "errors": 0
+    },
+    {
+      "matchId": "47466",
+      "botId": "340",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:41:46.863Z",
+      "score": 68,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 7,
+      "tilesWon": 13,
+      "totalPaid": 161,
+      "words": [
+        "SHEAFED",
+        "ABACI",
+        "ROUT",
+        "LO"
+      ],
+      "opponentScores": [
+        72,
+        69,
+        96,
+        92,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47487",
+      "botId": "340",
+      "policy": "market-convert",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:43:04.407Z",
+      "score": 88,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 18,
+      "tilesWon": 15,
+      "totalPaid": 170,
+      "words": [
+        "ACIDOTIC",
+        "QUIETS",
+        "AWNS",
+        "AL"
+      ],
+      "opponentScores": [
+        69,
+        84,
+        72,
+        60,
+        91
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47361",
+      "botId": "373",
+      "policy": "convert-00",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:07.123Z",
+      "score": 47,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 8,
+      "tilesWon": 10,
+      "totalPaid": 139,
+      "words": [
+        "MANROPE",
+        "APOD",
+        "LO",
+        "LI"
+      ],
+      "opponentScores": [
+        86,
+        86,
+        99,
+        62,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47473",
+      "botId": "373",
+      "policy": "evo-final-0",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:16.769Z",
+      "score": 97,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 25,
+      "tilesWon": 13,
+      "totalPaid": 172,
+      "words": [
+        "KELVINS",
+        "CULVERT",
+        "QUIN"
+      ],
+      "opponentScores": [
+        45,
+        104,
+        57,
+        68,
+        95
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47361",
+      "botId": "374",
+      "policy": "convert-01",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:07.123Z",
+      "score": 86,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 6,
+      "tilesWon": 11,
+      "totalPaid": 180,
+      "words": [
+        "CRAZIES",
+        "FAWNY",
+        "NOG"
+      ],
+      "opponentScores": [
+        86,
+        47,
+        99,
+        62,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47473",
+      "botId": "374",
+      "policy": "evo-final-1",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:16.769Z",
+      "score": 68,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 30,
+      "tilesWon": 13,
+      "totalPaid": 138,
+      "words": [
+        "PROBATE",
+        "PETTIER",
+        "IF",
+        "DO"
+      ],
+      "opponentScores": [
+        45,
+        104,
+        57,
+        97,
+        95
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47361",
+      "botId": "375",
+      "policy": "convert-02",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:07.123Z",
+      "score": 99,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 18,
+      "tilesWon": 11,
+      "totalPaid": 181,
+      "words": [
+        "WATCHED",
+        "QUAKER",
+        "RED"
+      ],
+      "opponentScores": [
+        86,
+        47,
+        86,
+        62,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47473",
+      "botId": "375",
+      "policy": "evo-final-2",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:16.769Z",
+      "score": 95,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 31,
+      "tilesWon": 11,
+      "totalPaid": 164,
+      "words": [
+        "FAZENDA",
+        "WANTAGE",
+        "US"
+      ],
+      "opponentScores": [
+        45,
+        104,
+        57,
+        97,
+        68
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47361",
+      "botId": "377",
+      "policy": "convert-03",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:07.123Z",
+      "score": 62,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 7,
+      "tilesWon": 11,
+      "totalPaid": 155,
+      "words": [
+        "OBVERT",
+        "MATTOID",
+        "IF"
+      ],
+      "opponentScores": [
+        86,
+        47,
+        86,
+        99,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47473",
+      "botId": "377",
+      "policy": "evo-final-3",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:16.769Z",
+      "score": 45,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 37,
+      "tilesWon": 9,
+      "totalPaid": 108,
+      "words": [
+        "SEIGNIOR",
+        "MOOS",
+        "XU"
+      ],
+      "opponentScores": [
+        104,
+        57,
+        97,
+        68,
+        95
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47361",
+      "botId": "378",
+      "policy": "convert-04",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:07.123Z",
+      "score": 53,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 11,
+      "tilesWon": 10,
+      "totalPaid": 142,
+      "words": [
+        "SOYBEAN",
+        "GLUTEI"
+      ],
+      "opponentScores": [
+        86,
+        47,
+        86,
+        99,
+        62
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47474",
+      "botId": "378",
+      "policy": "evo-final-0",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:19.936Z",
+      "score": 56,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 17,
+      "tilesWon": 11,
+      "totalPaid": 139,
+      "words": [
+        "AVIATES",
+        "FLORAE",
+        "OP"
+      ],
+      "opponentScores": [
+        70,
+        103,
+        42,
+        50,
+        88
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47361",
+      "botId": "379",
+      "policy": "convert-05",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:07.123Z",
+      "score": 86,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 9,
+      "tilesWon": 13,
+      "totalPaid": 177,
+      "words": [
+        "HEAVING",
+        "JOINTS",
+        "LEX",
+        "ES"
+      ],
+      "opponentScores": [
+        47,
+        86,
+        99,
+        62,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47474",
+      "botId": "379",
+      "policy": "evo-final-1",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:19.936Z",
+      "score": 70,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 18,
+      "tilesWon": 13,
+      "totalPaid": 152,
+      "words": [
+        "GUANASE",
+        "JOINTER",
+        "BI"
+      ],
+      "opponentScores": [
+        103,
+        42,
+        50,
+        88,
+        56
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47362",
+      "botId": "380",
+      "policy": "convert-06",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:12.598Z",
+      "score": 60,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 17,
+      "tilesWon": 10,
+      "totalPaid": 143,
+      "words": [
+        "ABODED",
+        "JIAO",
+        "MI",
+        "WIZ"
+      ],
+      "opponentScores": [
+        40,
+        90,
+        64,
+        70,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47475",
+      "botId": "380",
+      "policy": "evo-final-2",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:22.317Z",
+      "score": 52,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 10,
+      "tilesWon": 11,
+      "totalPaid": 142,
+      "words": [
+        "OUTWEAR",
+        "THETA",
+        "LI",
+        "PI"
+      ],
+      "opponentScores": [
+        58,
+        109,
+        70,
+        72,
+        79
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47362",
+      "botId": "381",
+      "policy": "convert-07",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:12.598Z",
+      "score": 90,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 15,
+      "tilesWon": 15,
+      "totalPaid": 175,
+      "words": [
+        "INFIXES",
+        "FORGER",
+        "QAT",
+        "LO"
+      ],
+      "opponentScores": [
+        40,
+        60,
+        64,
+        70,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47475",
+      "botId": "381",
+      "policy": "evo-final-3",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:22.317Z",
+      "score": 109,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 40,
+      "tilesWon": 12,
+      "totalPaid": 169,
+      "words": [
+        "OBSEQUY",
+        "MAXIMS",
+        "OR",
+        "AI"
+      ],
+      "opponentScores": [
+        58,
+        52,
+        70,
+        72,
+        79
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47362",
+      "botId": "382",
+      "policy": "convert-08",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:12.598Z",
+      "score": 64,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 6,
+      "tilesWon": 11,
+      "totalPaid": 158,
+      "words": [
+        "MACHINE",
+        "GARRED",
+        "AT"
+      ],
+      "opponentScores": [
+        40,
+        60,
+        90,
+        70,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47477",
+      "botId": "382",
+      "policy": "evo-final-0",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:24.761Z",
+      "score": 73,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 34,
+      "tilesWon": 12,
+      "totalPaid": 139,
+      "words": [
+        "HERNIAE",
+        "BLOWIEST",
+        "PA"
+      ],
+      "opponentScores": [
+        0,
+        101,
+        81,
+        136,
+        44
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47362",
+      "botId": "383",
+      "policy": "convert-09",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:12.598Z",
+      "score": 70,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 3,
+      "tilesWon": 12,
+      "totalPaid": 167,
+      "words": [
+        "UNPAVED",
+        "VEEPEE",
+        "OR",
+        "IN"
+      ],
+      "opponentScores": [
+        40,
+        60,
+        90,
+        64,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47477",
+      "botId": "383",
+      "policy": "evo-final-1",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:24.761Z",
+      "score": 81,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 28,
+      "tilesWon": 14,
+      "totalPaid": 153,
+      "words": [
+        "RAVELED",
+        "AMENITY",
+        "TIT",
+        "XU"
+      ],
+      "opponentScores": [
+        0,
+        73,
+        101,
+        136,
+        44
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47362",
+      "botId": "384",
+      "policy": "convert-10",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:12.598Z",
+      "score": 53,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 11,
+      "tilesWon": 10,
+      "totalPaid": 142,
+      "words": [
+        "OCTANES",
+        "RYKE",
+        "UH",
+        "OW"
+      ],
+      "opponentScores": [
+        40,
+        60,
+        90,
+        64,
+        70
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47477",
+      "botId": "384",
+      "policy": "evo-final-2",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:24.761Z",
+      "score": 136,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 3,
+      "tilesWon": 19,
+      "totalPaid": 233,
+      "words": [
+        "ZOECIUM",
+        "QUIETER",
+        "KASHA",
+        "ES",
+        "NO"
+      ],
+      "opponentScores": [
+        0,
+        73,
+        101,
+        81,
+        44
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47362",
+      "botId": "385",
+      "policy": "convert-11",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:12.598Z",
+      "score": 40,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 16,
+      "tilesWon": 9,
+      "totalPaid": 124,
+      "words": [
+        "GLUTTON",
+        "ABLY",
+        "ITS"
+      ],
+      "opponentScores": [
+        60,
+        90,
+        64,
+        70,
+        53
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47477",
+      "botId": "385",
+      "policy": "evo-final-3",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:24.761Z",
+      "score": 44,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 84,
+      "tilesWon": 4,
+      "totalPaid": 60,
+      "words": [
+        "WAFTING",
+        "OE"
+      ],
+      "opponentScores": [
+        0,
+        73,
+        101,
+        81,
+        136
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47363",
+      "botId": "386",
+      "policy": "convert-12",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:15.022Z",
+      "score": 58,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 10,
+      "tilesWon": 12,
+      "totalPaid": 148,
+      "words": [
+        "PARGOS",
+        "WOODIES",
+        "ALE"
+      ],
+      "opponentScores": [
+        87,
+        0,
+        46,
+        69,
+        174
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47478",
+      "botId": "386",
+      "policy": "evo-final-0",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:27.933Z",
+      "score": 105,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 23,
+      "tilesWon": 17,
+      "totalPaid": 182,
+      "words": [
+        "GLORIFY",
+        "CRAYONS",
+        "PUEBLO",
+        "LI"
+      ],
+      "opponentScores": [
+        123,
+        0,
+        109,
+        83,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47363",
+      "botId": "387",
+      "policy": "convert-13",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:15.022Z",
+      "score": 46,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 21,
+      "tilesWon": 9,
+      "totalPaid": 125,
+      "words": [
+        "TINCTED",
+        "HEX",
+        "RAN"
+      ],
+      "opponentScores": [
+        87,
+        0,
+        58,
+        69,
+        174
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47478",
+      "botId": "387",
+      "policy": "evo-final-1",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:27.933Z",
+      "score": 109,
+      "place": 2,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 29,
+      "tilesWon": 19,
+      "totalPaid": 180,
+      "words": [
+        "MANTEAUS",
+        "QUOTING",
+        "HEILED",
+        "ERE"
+      ],
+      "opponentScores": [
+        123,
+        105,
+        0,
+        83,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47363",
+      "botId": "388",
+      "policy": "convert-14",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:15.022Z",
+      "score": 69,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 23,
+      "tilesWon": 12,
+      "totalPaid": 146,
+      "words": [
+        "VOYAGEUR",
+        "IMBUE",
+        "WIN"
+      ],
+      "opponentScores": [
+        87,
+        0,
+        58,
+        46,
+        174
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47478",
+      "botId": "388",
+      "policy": "evo-final-2",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:27.933Z",
+      "score": 83,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 11,
+      "tilesWon": 14,
+      "totalPaid": 172,
+      "words": [
+        "VAGINAS",
+        "JOINTER",
+        "NU",
+        "KA"
+      ],
+      "opponentScores": [
+        123,
+        105,
+        0,
+        109,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47364",
+      "botId": "389",
+      "policy": "convert-15",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:16.899Z",
+      "score": 87,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 7,
+      "tilesWon": 17,
+      "totalPaid": 180,
+      "words": [
+        "FINEABLE",
+        "CONVERT",
+        "DOOM",
+        "ES"
+      ],
+      "opponentScores": [
+        0,
+        88,
+        70,
+        45,
+        126
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47479",
+      "botId": "389",
+      "policy": "evo-final-3",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:28.640Z",
+      "score": 65,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 25,
+      "tilesWon": 10,
+      "totalPaid": 140,
+      "words": [
+        "MIAOWED",
+        "SOFTIE",
+        "OP"
+      ],
+      "opponentScores": [
+        58,
+        75,
+        68,
+        65,
+        111
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47364",
+      "botId": "390",
+      "policy": "convert-16",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:16.899Z",
+      "score": 70,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 6,
+      "tilesWon": 14,
+      "totalPaid": 164,
+      "words": [
+        "THIAMIN",
+        "GUIDE",
+        "AX",
+        "KIP",
+        "AT"
+      ],
+      "opponentScores": [
+        0,
+        88,
+        87,
+        45,
+        126
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47480",
+      "botId": "390",
+      "policy": "evo-final-0",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:33.464Z",
+      "score": 104,
+      "place": 1,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 39,
+      "tilesWon": 12,
+      "totalPaid": 165,
+      "words": [
+        "FIXTURE",
+        "EQUATED",
+        "AT"
+      ],
+      "opponentScores": [
+        97,
+        50,
+        80,
+        38,
+        96
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47366",
+      "botId": "391",
+      "policy": "convert-17",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:18.803Z",
+      "score": 114,
+      "place": 3,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 19,
+      "tilesWon": 15,
+      "totalPaid": 195,
+      "words": [
+        "FORSAKE",
+        "JOYRODE",
+        "COPY",
+        "AL"
+      ],
+      "opponentScores": [
+        129,
+        134,
+        38,
+        0,
+        46
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47480",
+      "botId": "391",
+      "policy": "evo-final-1",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:33.464Z",
+      "score": 50,
+      "place": 5,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 29,
+      "tilesWon": 9,
+      "totalPaid": 121,
+      "words": [
+        "VULGAR",
+        "TWICE",
+        "BEE"
+      ],
+      "opponentScores": [
+        97,
+        104,
+        80,
+        38,
+        96
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47366",
+      "botId": "392",
+      "policy": "convert-18",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:18.803Z",
+      "score": 46,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 20,
+      "tilesWon": 10,
+      "totalPaid": 126,
+      "words": [
+        "ORATING",
+        "BILLIE",
+        "ET"
+      ],
+      "opponentScores": [
+        129,
+        134,
+        38,
+        114,
+        0
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47480",
+      "botId": "392",
+      "policy": "evo-final-2",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:33.464Z",
+      "score": 80,
+      "place": 4,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 8,
+      "tilesWon": 15,
+      "totalPaid": 172,
+      "words": [
+        "FORWHY",
+        "RIGATONI",
+        "ANIL",
+        "EN"
+      ],
+      "opponentScores": [
+        97,
+        104,
+        50,
+        38,
+        96
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47367",
+      "botId": "393",
+      "policy": "convert-19",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:34:19.533Z",
+      "score": 50,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 17,
+      "tilesWon": 11,
+      "totalPaid": 133,
+      "words": [
+        "TOTALED",
+        "NEGRONI",
+        "LO"
+      ],
+      "opponentScores": [
+        96,
+        95,
+        59,
+        84,
+        59
+      ],
+      "errors": 0
+    },
+    {
+      "matchId": "47480",
+      "botId": "393",
+      "policy": "evo-final-3",
+      "format": "Vickrey",
+      "endedAt": "2026-11-08T04:42:33.464Z",
+      "score": 38,
+      "place": 6,
+      "tableSize": 6,
+      "firstPlaceTies": 1,
+      "finalCash": 48,
+      "tilesWon": 8,
+      "totalPaid": 90,
+      "words": [
+        "ACROMIA",
+        "OES",
+        "AN"
+      ],
+      "opponentScores": [
+        97,
+        104,
+        50,
+        80,
+        96
+      ],
+      "errors": 0
     }
   ]
 }
