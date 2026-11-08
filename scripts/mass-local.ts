@@ -21,7 +21,7 @@ const started=performance.now(),cpuStart=process.cpuUsage();
 const engine=new WordEngine(fs.readFileSync('data/wordlist.txt','utf8').split(/\r?\n/));
 const preprocessingMs=performance.now()-started;
 function random(seed:number){let s=seed>>>0;return()=>{s+=0x6D2B79F5;let t=s;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;};}
-interface Policy{chooseWord(ctx:StrategyContext):string|null;decideBid(ctx:StrategyContext&{letter:string}):number}
+export interface Policy{chooseWord(ctx:StrategyContext):string|null;decideBid(ctx:StrategyContext&{letter:string}):number}
 interface Player{rack:Rack;cash:number;score:number;policy:Policy;prices:number[];won:number;paid:number}
 export interface MatchResult{seed:number;seedKind:'independent'|'paired';scenario:string;seat:number;score:number;place:number;first:boolean;outright:boolean;last:boolean;strictLast:boolean;cash:number;tilesWon:number;paid:number;unplayed:number;opponentScores:number[];elapsedMs:number}
 export const scenarios=['convert-selfplay','strong-mixed','empirical-price-pressure'];
@@ -44,21 +44,23 @@ export function stats(rows:MatchResult[]){
  return{games:n,meanScore:avg,scoreStdErr:Math.sqrt(variance/Math.max(1,n)),meanPlace:mean('place'),firstPlaces:rows.filter(r=>r.first).length,outrightWins:rows.filter(r=>r.outright).length,sharedFirsts:rows.filter(r=>r.first&&!r.outright).length,winRate:n?rows.filter(r=>r.first).length/n:0,lastPlaces:rows.filter(r=>r.last).length,strictLasts:rows.filter(r=>r.strictLast).length,lastRate:n?rows.filter(r=>r.last).length/n:0,meanCash:mean('cash'),meanTilesWon:mean('tilesWon'),meanPaid:mean('paid'),meanUnplayedTiles:mean('unplayed'),meanMatchElapsedMs:mean('elapsedMs')};
 }
 function latencyStats(times:number[]){times.sort((a,b)=>a-b);const q=(p:number)=>times[Math.min(times.length-1,Math.floor(times.length*p))]??0;return{samples:times.length,p50:q(.5),p95:q(.95),p99:q(.99),max:times.at(-1)??0};}
-export function playMatch(options:StrategyOptions,seed:number,seat:number,scenarioIndex:number,seedKind:'independent'|'paired',latencies:number[]):MatchResult{
+export function playMatch(options:StrategyOptions,seed:number,seat:number,scenarioIndex:number,seedKind:'independent'|'paired',latencies:number[],heroPolicy?:Policy):MatchResult{
  const t=performance.now(),rand=random(seed),bag=Object.entries(DEFAULT_BAG).flatMap(([c,n])=>Array<string>(n).fill(c));
  for(let i=bag.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[bag[i],bag[j]]=[bag[j],bag[i]];}
  let oi=0;const mixed:Policy[]=[new Strategy(engine,'market-convert'),new Strategy(engine,{mode:'market-convert',floorMultiplier:1.2,acquisitionReserve:1}),new Strategy(engine,'market-margin'),new Strategy(engine,'market-quality'),empirical(1)];
- const ps:Player[]=Array.from({length:6},(_,i)=>({rack:new Map(),cash:100,score:0,policy:i===seat?new Strategy(engine,options):scenarioIndex===0?new Strategy(engine,'market-convert'):scenarioIndex===1?mixed[oi++]:empirical(oi++-1),prices:[],won:0,paid:0}));
+ const ps:Player[]=Array.from({length:6},(_,i)=>({rack:new Map(),cash:100,score:0,policy:i===seat?(heroPolicy??new Strategy(engine,options)):scenarioIndex===0?new Strategy(engine,'market-convert'):scenarioIndex===1?mixed[oi++]:empirical(oi++-1),prices:[],won:0,paid:0}));
  // Server deals five consecutive private draws to each player.
  for(const p of ps)for(let n=0;n<5;n++){const c=bag.pop()!;p.rack.set(c,(p.rack.get(c)??0)+1);}
- const context=(p:Player,remainingTiles:number):StrategyContext=>({myRack:p.rack,myBalance:p.cash,myScore:p.score,remainingTiles,auctionType:'Vickrey',auctionDurationMs:1000,opponentCount:5,observedPrices:p.prices,opponentScores:ps.filter(o=>o!==p).map(o=>o.score)});
+ const recentAuctionPrices:Array<{auctionId:string;letter:string;paid:number}>=[];
+ let closedAuctionOrdinal=0;
+ const context=(p:Player,remainingTiles:number):StrategyContext=>({myRack:p.rack,myBalance:p.cash,myScore:p.score,remainingTiles,auctionType:'Vickrey',auctionDurationMs:1000,opponentCount:5,observedPrices:p.prices,recentAuctionPrices,opponentScores:ps.filter(o=>o!==p).map(o=>o.score)});
  const timed=<T>(fn:()=>T):T=>{const start=performance.now();const value=fn();latencies.push(performance.now()-start);return value;};
  while(bag.length){const letter=bag.pop()!,remaining=bag.length;
   // The previous award and current draw are one server transaction. The final
   // award has no subsequent opening, so no real client can redeem its tile.
   for(let pi=0;pi<6;pi++){const p=ps[pi];for(let w=0;w<50;w++){const c=context(p,remaining),word=pi===seat?timed(()=>p.policy.chooseWord(c)):p.policy.chooseWord(c);if(!word)break;if(!canSpell(word,p.rack))throw new Error(`Illegal word ${word}`);const reward=scoreWord(word);p.cash+=reward;p.score+=reward;for(const c of word){const n=p.rack.get(c)!-1;if(n)p.rack.set(c,n);else p.rack.delete(c);}if(w===49)throw new Error('Word loop exceeded');}}
   const bids=ps.map((p,pi)=>{const c={...context(p,remaining),letter};const bid=pi===seat?timed(()=>p.policy.decideBid(c)):p.policy.decideBid(c);if(!Number.isSafeInteger(bid)||bid<0||bid>p.cash)throw new Error(`Illegal bid ${bid}`);return bid;});
-  const top=Math.max(...bids);if(top>0){const tied=bids.flatMap((b,i)=>b===top?[i]:[]),winner=tied[Math.floor(rand()*tied.length)],sorted=[...bids].sort((a,b)=>b-a),paid=Math.max(1,sorted[1]),p=ps[winner];p.cash-=paid;p.won++;p.paid+=paid;p.rack.set(letter,(p.rack.get(letter)??0)+1);for(const p of ps)p.prices.push(paid);}
+  const top=Math.max(...bids);if(top>0){const tied=bids.flatMap((b,i)=>b===top?[i]:[]),winner=tied[Math.floor(rand()*tied.length)],sorted=[...bids].sort((a,b)=>b-a),paid=Math.max(1,sorted[1]),p=ps[winner];p.cash-=paid;p.won++;p.paid+=paid;p.rack.set(letter,(p.rack.get(letter)??0)+1);for(const p of ps)p.prices.push(paid);recentAuctionPrices.push({auctionId:String(++closedAuctionOrdinal),letter,paid});}
   // No-bid draws are consumed, as in the pinned module.
  }
  const p=ps[seat],opponents=ps.filter(o=>o!==p),ahead=opponents.filter(o=>o.score>p.score).length;

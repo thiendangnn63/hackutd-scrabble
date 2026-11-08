@@ -1,4 +1,5 @@
 import { WordEngine, LETTER_VALUE, type Rack } from './engine.js';
+import { letterPriceBid, type PublicAuctionPrice } from './letter-price.js';
 
 export interface StrategyContext {
   myRack: Rack;
@@ -12,9 +13,10 @@ export interface StrategyContext {
   opponentCount?: number;
   observedPrices?: number[];
   auctionDurationMs?: number;
+  recentAuctionPrices?: readonly PublicAuctionPrice[];
 }
 export type StrategyMode = 'starter' | 'greedy' | 'hoard' | 'adaptive' | 'aggressive' | 'patient' | 'market' | 'market-focused' | 'market-all' | 'market-budget' | 'market-pressure' | 'market-margin' | 'market-quality' | 'market-convert';
-export interface StrategyOptions { mode?: StrategyMode; bidScale?: number; holdGain?: number; floorMultiplier?: number; acquisitionReserve?: number; terminalSpend?: boolean }
+export interface StrategyOptions { mode?: StrategyMode; bidScale?: number; holdGain?: number; floorMultiplier?: number; acquisitionReserve?: number; terminalSpend?: boolean; letterPrices?: boolean }
 
 const VOWELS = new Set('AEIOU');
 const size = (rack: Rack): number => [...rack.values()].reduce((a, b) => a + b, 0);
@@ -27,12 +29,14 @@ export class Strategy {
   private readonly floorMultiplier?: number;
   private readonly acquisitionReserve: number;
   private readonly terminalSpend: boolean;
+  private readonly useLetterPrices: boolean;
   constructor(readonly engine: WordEngine, options: StrategyOptions | StrategyMode = {}) {
     if (typeof options === 'string') options = { mode: options };
     this.mode = options.mode ?? 'market-convert';
     this.floorMultiplier=options.floorMultiplier;
     this.acquisitionReserve=options.acquisitionReserve??0.65;
     this.terminalSpend=options.terminalSpend??false;
+    this.useLetterPrices=options.letterPrices??false;
     this.bidScale = options.bidScale ?? ((this.mode === 'aggressive' || this.mode === 'market' || this.mode === 'market-focused' || this.mode.startsWith('market-')) ? 1.6 : this.mode === 'patient' ? 0.8 : 1.15);
     this.holdGain = options.holdGain ?? (this.mode === 'patient' ? 1.12 : (this.mode === 'aggressive' || this.mode === 'market' || this.mode === 'market-focused' || this.mode.startsWith('market-')) ? 1.5 : 1.3);
   }
@@ -122,7 +126,8 @@ export class Strategy {
     if (this.mode === 'market-convert' && readyGain > 0 && afterBest && afterBest.word.length >= 6) {
       cashCap = Math.max(cashCap, Math.min(balance, afterBest.score));
     }
-    return Math.min(balance, Math.max(0, Math.floor(Math.min(value, cashCap))));
+    const baseBid = Math.min(balance, Math.max(0, Math.floor(Math.min(value, cashCap))));
+    return this.useLetterPrices ? letterPriceBid({ ...ctx, letter }, { baseBid, face, have, readyGain, tiles, vowels, cashCap }) : baseBid;
   }
 
   chooseWord(ctx: StrategyContext): string | null {

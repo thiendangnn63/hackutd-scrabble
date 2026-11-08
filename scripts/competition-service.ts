@@ -34,7 +34,7 @@ if (action === 'stop') {
     if (!entry.options || typeof entry.options !== 'object' || Array.isArray(entry.options)) throw new Error('Public configuration options must be an object.');
     selectedLabel = entry.label;
     for (const [key, value] of Object.entries(entry.options)) {
-      if (key === 'terminalSpend' && typeof value === 'boolean') { selectedOptions[key] = value; continue; }
+      if ((key === 'terminalSpend' || key === 'letterPrices') && typeof value === 'boolean') { selectedOptions[key] = value; continue; }
       if (!['bidScale', 'holdGain', 'floorMultiplier', 'acquisitionReserve'].includes(key) || typeof value !== 'number' || !Number.isFinite(value) || value <= 0 || value > 5) throw new Error(`Invalid public strategy option ${key}; numeric values must be >0 and <=5.`);
       selectedOptions[key] = value;
     }

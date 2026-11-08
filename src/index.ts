@@ -33,7 +33,7 @@ if (mode && !modes.includes(mode as StrategyMode)) throw new Error(`Unknown STRA
 const strategyOptions: StrategyOptions = process.env.STRATEGY_OPTIONS ? JSON.parse(process.env.STRATEGY_OPTIONS) : {};
 if (!strategyOptions || typeof strategyOptions !== 'object' || Array.isArray(strategyOptions)) throw new Error('STRATEGY_OPTIONS must be an object.');
 for (const [key, value] of Object.entries(strategyOptions)) {
-  if (key === 'terminalSpend' && typeof value === 'boolean') continue;
+  if ((key === 'terminalSpend' || key === 'letterPrices') && typeof value === 'boolean') continue;
   if (!['bidScale', 'holdGain', 'floorMultiplier', 'acquisitionReserve'].includes(key) || typeof value !== 'number' || !Number.isFinite(value) || value <= 0 || value > 5) throw new Error(`Invalid strategy option ${key}`);
 }
 const useProductionProfile = !mode && !process.env.STRATEGY_OPTIONS;
@@ -160,13 +160,15 @@ function refresh(): void {
     for (const row of conn.db.myRack.iter()) if (row.matchId === match.id) rack.set(row.letter, (rack.get(row.letter) ?? 0) + row.count);
     const participants = [...conn.db.matchParticipant.iter()].filter(p => p.matchId === match.id);
     const auction = match.currentAuctionId === undefined ? undefined : conn.db.auction.id.find(match.currentAuctionId);
-    const prices = [...conn.db.auctionResult.iter()].filter(r => r.matchId === match.id && r.paid > 0n)
-      .sort((a, b) => a.closedAt.microsSinceUnixEpoch < b.closedAt.microsSinceUnixEpoch ? -1 : 1).slice(-24).map(r => Number(r.paid));
+    const priceHistory = [...conn.db.auctionResult.iter()].filter(r => r.matchId === match.id && r.paid > 0n)
+      .sort((a, b) => a.closedAt.microsSinceUnixEpoch < b.closedAt.microsSinceUnixEpoch ? -1 : 1);
+    const prices = priceHistory.slice(-24).map(r => Number(r.paid));
     matches.push({
       matchId: match.id, myRack: rack, myBalance: Number(mine.balance), myScore: Number(mine.score),
       remainingTiles: match.bagTotal, auctionType: match.auctionType.tag, auctionDurationMs: Number(match.auctionDurationMs),
       opponentScores: participants.filter(p => p.botId !== myBotId).map(p => Number(p.score)),
       opponentCount: Math.max(0, participants.length - 1), observedPrices: prices,
+      recentAuctionPrices: priceHistory.map(r => ({ auctionId: String(r.auctionId), letter: r.letter, paid: Number(r.paid) })),
       auction: auction?.status.tag === 'Open' ? {
         id: auction.id, letter: auction.letter, closesAtMs: Number(auction.closesAt.microsSinceUnixEpoch / 1000n), durationMs: Number(match.auctionDurationMs),
       } : undefined,
