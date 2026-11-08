@@ -1,0 +1,344 @@
+[
+  {
+    "botId": "340",
+    "label": "bigdawg",
+    "policy": "market-convert",
+    "policyLabel": "market-convert",
+    "options": {}
+  },
+  {
+    "botId": "350",
+    "label": "margin",
+    "policy": "market-margin"
+  },
+  {
+    "botId": "351",
+    "label": "quality",
+    "policy": "market-quality"
+  },
+  {
+    "botId": "355",
+    "label": "all2",
+    "policy": "market-all"
+  },
+  {
+    "botId": "356",
+    "label": "all3",
+    "policy": "market-all"
+  },
+  {
+    "botId": "357",
+    "label": "all4",
+    "policy": "market-all"
+  },
+  {
+    "botId": "358",
+    "label": "margin2",
+    "policy": "market-margin"
+  },
+  {
+    "botId": "359",
+    "label": "margin3",
+    "policy": "market-margin"
+  },
+  {
+    "botId": "360",
+    "label": "margin4",
+    "policy": "market-margin"
+  },
+  {
+    "botId": "361",
+    "label": "margin5",
+    "policy": "market-margin"
+  },
+  {
+    "botId": "362",
+    "label": "quality2",
+    "policy": "market-quality"
+  },
+  {
+    "botId": "363",
+    "label": "quality3",
+    "policy": "market-quality"
+  },
+  {
+    "botId": "364",
+    "label": "quality4",
+    "policy": "market-quality"
+  },
+  {
+    "botId": "365",
+    "label": "quality5",
+    "policy": "market-quality"
+  },
+  {
+    "botId": "366",
+    "label": "convert1",
+    "policy": "market-convert"
+  },
+  {
+    "botId": "367",
+    "label": "convert2",
+    "policy": "market-convert"
+  },
+  {
+    "botId": "368",
+    "label": "convert3",
+    "policy": "market-convert"
+  },
+  {
+    "botId": "369",
+    "label": "convert4",
+    "policy": "market-convert"
+  },
+  {
+    "botId": "370",
+    "label": "convert5",
+    "policy": "market-convert"
+  },
+  {
+    "botId": "371",
+    "label": "convert6",
+    "policy": "market-convert"
+  },
+  {
+    "botId": "373",
+    "label": "all5",
+    "policy": "market-convert",
+    "policyLabel": "convert-00",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "374",
+    "label": "all6",
+    "policy": "market-convert",
+    "policyLabel": "convert-01",
+    "options": {
+      "floorMultiplier": 1.1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "375",
+    "label": "all7",
+    "policy": "market-convert",
+    "policyLabel": "convert-02",
+    "options": {
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "377",
+    "label": "all8",
+    "policy": "market-convert",
+    "policyLabel": "convert-03",
+    "options": {
+      "floorMultiplier": 1.35,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "378",
+    "label": "all9",
+    "policy": "market-convert",
+    "policyLabel": "convert-04",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.5,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "379",
+    "label": "all10",
+    "policy": "market-convert",
+    "policyLabel": "convert-05",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "380",
+    "label": "all11",
+    "policy": "market-convert",
+    "policyLabel": "convert-06",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 1,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "381",
+    "label": "all12",
+    "policy": "market-convert",
+    "policyLabel": "convert-07",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.2,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "382",
+    "label": "all13",
+    "policy": "market-convert",
+    "policyLabel": "convert-08",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 2,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "383",
+    "label": "all14",
+    "policy": "market-convert",
+    "policyLabel": "convert-09",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 2.5,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "384",
+    "label": "convert7",
+    "policy": "market-convert",
+    "policyLabel": "convert-10",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 1.12
+    }
+  },
+  {
+    "botId": "385",
+    "label": "convert8",
+    "policy": "market-convert",
+    "policyLabel": "convert-11",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.65,
+      "bidScale": 1.6,
+      "holdGain": 2
+    }
+  },
+  {
+    "botId": "386",
+    "label": "convert9",
+    "policy": "market-convert",
+    "policyLabel": "convert-12",
+    "options": {
+      "floorMultiplier": 1.1,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "387",
+    "label": "convert10",
+    "policy": "market-convert",
+    "policyLabel": "convert-13",
+    "options": {
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "388",
+    "label": "convert11",
+    "policy": "market-convert",
+    "policyLabel": "convert-14",
+    "options": {
+      "floorMultiplier": 1.35,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "389",
+    "label": "convert12",
+    "policy": "market-convert",
+    "policyLabel": "convert-15",
+    "options": {
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 1,
+      "bidScale": 1.6,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "390",
+    "label": "convert13",
+    "policy": "market-convert",
+    "policyLabel": "convert-16",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 0.8,
+      "bidScale": 2,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "391",
+    "label": "convert14",
+    "policy": "market-convert",
+    "policyLabel": "convert-17",
+    "options": {
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 0.8,
+      "bidScale": 2,
+      "holdGain": 1.5
+    }
+  },
+  {
+    "botId": "392",
+    "label": "convert15",
+    "policy": "market-convert",
+    "policyLabel": "convert-18",
+    "options": {
+      "floorMultiplier": 1.2,
+      "acquisitionReserve": 0.8,
+      "bidScale": 1.6,
+      "holdGain": 1.12
+    }
+  },
+  {
+    "botId": "393",
+    "label": "convert16",
+    "policy": "market-convert",
+    "policyLabel": "convert-19",
+    "options": {
+      "floorMultiplier": 1.1,
+      "acquisitionReserve": 0.8,
+      "bidScale": 2,
+      "holdGain": 2
+    }
+  }
+]

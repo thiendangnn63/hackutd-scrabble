@@ -1,0 +1,42 @@
+{
+  "localOnly": true,
+  "productionPolicyRetained": "evo-final-0",
+  "reason": "No candidate has a paired 95% interval wholly below zero for mean-place difference against current selected policy.",
+  "completedSearchMatchesLowerBound": 21394,
+  "freshFinalMatches": 2000,
+  "completedTotalLowerBound": 23394,
+  "freshFinalBagsPerPolicy": 500,
+  "policiesInFinal": 4,
+  "searchIslands": [
+    {
+      "island": 0,
+      "generations": 4,
+      "actualFullMatches": 3164
+    },
+    {
+      "island": 1,
+      "generations": 4,
+      "actualFullMatches": 3257
+    },
+    {
+      "island": 2,
+      "generations": 4,
+      "actualFullMatches": 3298
+    },
+    {
+      "island": 3,
+      "generations": 4,
+      "actualFullMatches": 3227
+    },
+    {
+      "island": 4,
+      "generations": 5,
+      "actualFullMatches": null
+    },
+    {
+      "island": 5,
+      "generations": 5,
+      "actualFullMatches": null
+    }
+  ]
+}

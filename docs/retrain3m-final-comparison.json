@@ -1,0 +1,622 @@
+{
+  "createdAt": "2026-11-08T04:55:02.624Z",
+  "baseline": {
+    "label": "frozen-public-baseline",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1,
+      "acquisitionReserve": 1.2,
+      "bidScale": 1.6,
+      "holdGain": 1.3,
+      "terminalSpend": false
+    },
+    "summary": {
+      "games": 500,
+      "meanScore": 76.664,
+      "scoreStdErr": 0.8319991906886769,
+      "meanPlace": 2.688,
+      "firstPlaces": 159,
+      "outrightWins": 151,
+      "sharedFirsts": 8,
+      "winRate": 0.318,
+      "lastPlaces": 43,
+      "strictLasts": 39,
+      "lastRate": 0.086,
+      "meanCash": 17.748,
+      "meanTilesWon": 11.79,
+      "meanPaid": 158.916,
+      "meanUnplayedTiles": 0.45,
+      "meanMatchElapsedMs": 17.412007452
+    },
+    "byScenario": {
+      "convert-selfplay": {
+        "games": 250,
+        "meanScore": 74.592,
+        "scoreStdErr": 1.10569452632369,
+        "meanPlace": 2.96,
+        "firstPlaces": 64,
+        "outrightWins": 62,
+        "sharedFirsts": 2,
+        "winRate": 0.256,
+        "lastPlaces": 29,
+        "strictLasts": 26,
+        "lastRate": 0.116,
+        "meanCash": 16.936,
+        "meanTilesWon": 11.552,
+        "meanPaid": 157.656,
+        "meanUnplayedTiles": 0.472,
+        "meanMatchElapsedMs": 17.793670184000018
+      },
+      "strong-mixed": {
+        "games": 250,
+        "meanScore": 78.736,
+        "scoreStdErr": 1.2318306877868783,
+        "meanPlace": 2.416,
+        "firstPlaces": 95,
+        "outrightWins": 89,
+        "sharedFirsts": 6,
+        "winRate": 0.38,
+        "lastPlaces": 14,
+        "strictLasts": 13,
+        "lastRate": 0.056,
+        "meanCash": 18.56,
+        "meanTilesWon": 12.028,
+        "meanPaid": 160.176,
+        "meanUnplayedTiles": 0.428,
+        "meanMatchElapsedMs": 17.030344719999984
+      }
+    }
+  },
+  "rankedCandidates": [
+    {
+      "label": "retrain3m-pair4",
+      "options": {
+        "mode": "market-convert",
+        "floorMultiplier": 2,
+        "acquisitionReserve": 1.5,
+        "bidScale": 1.6,
+        "holdGain": 1.3,
+        "terminalSpend": false
+      },
+      "summary": {
+        "games": 500,
+        "meanScore": 77.436,
+        "scoreStdErr": 0.8507051230672268,
+        "meanPlace": 2.624,
+        "firstPlaces": 165,
+        "outrightWins": 162,
+        "sharedFirsts": 3,
+        "winRate": 0.33,
+        "lastPlaces": 40,
+        "strictLasts": 35,
+        "lastRate": 0.08,
+        "meanCash": 16.618,
+        "meanTilesWon": 11.944,
+        "meanPaid": 160.818,
+        "meanUnplayedTiles": 0.46,
+        "meanMatchElapsedMs": 17.43050109199997
+      },
+      "byScenario": {
+        "convert-selfplay": {
+          "games": 250,
+          "meanScore": 75.5,
+          "scoreStdErr": 1.1278333352621361,
+          "meanPlace": 2.856,
+          "firstPlaces": 66,
+          "outrightWins": 65,
+          "sharedFirsts": 1,
+          "winRate": 0.264,
+          "lastPlaces": 28,
+          "strictLasts": 24,
+          "lastRate": 0.112,
+          "meanCash": 16.66,
+          "meanTilesWon": 11.62,
+          "meanPaid": 158.84,
+          "meanUnplayedTiles": 0.488,
+          "meanMatchElapsedMs": 17.87383666399997
+        },
+        "strong-mixed": {
+          "games": 250,
+          "meanScore": 79.372,
+          "scoreStdErr": 1.2643165939744665,
+          "meanPlace": 2.392,
+          "firstPlaces": 99,
+          "outrightWins": 97,
+          "sharedFirsts": 2,
+          "winRate": 0.396,
+          "lastPlaces": 12,
+          "strictLasts": 11,
+          "lastRate": 0.048,
+          "meanCash": 16.576,
+          "meanTilesWon": 12.268,
+          "meanPaid": 162.796,
+          "meanUnplayedTiles": 0.432,
+          "meanMatchElapsedMs": 16.987165519999976
+        }
+      },
+      "pairedAgainstBaseline": {
+        "place": {
+          "games": 500,
+          "meanDifference": -0.064,
+          "ci95": [
+            -0.16510884238689338,
+            0.03710884238689338
+          ]
+        },
+        "score": {
+          "games": 500,
+          "meanDifference": 0.772,
+          "ci95": [
+            -0.23295417682909902,
+            1.776954176829099
+          ]
+        },
+        "firstPlaceRate": {
+          "games": 500,
+          "meanDifference": 0.012,
+          "ci95": [
+            -0.020340386831961012,
+            0.04434038683196101
+          ]
+        },
+        "lastPlaceRate": {
+          "games": 500,
+          "meanDifference": -0.006,
+          "ci95": [
+            -0.025612565110674404,
+            0.013612565110674405
+          ]
+        }
+      },
+      "pairedByScenario": {
+        "convert-selfplay": {
+          "place": {
+            "games": 250,
+            "meanDifference": -0.104,
+            "ci95": [
+              -0.23807680551350718,
+              0.03007680551350718
+            ]
+          },
+          "score": {
+            "games": 250,
+            "meanDifference": 0.908,
+            "ci95": [
+              -0.41617093968279006,
+              2.2321709396827902
+            ]
+          },
+          "firstPlaceRate": {
+            "games": 250,
+            "meanDifference": 0.008,
+            "ci95": [
+              -0.03204417929715032,
+              0.04804417929715032
+            ]
+          },
+          "lastPlaceRate": {
+            "games": 250,
+            "meanDifference": -0.004,
+            "ci95": [
+              -0.03442104365712581,
+              0.026421043657125814
+            ]
+          }
+        },
+        "strong-mixed": {
+          "place": {
+            "games": 250,
+            "meanDifference": -0.024,
+            "ci95": [
+              -0.17548645065658572,
+              0.12748645065658573
+            ]
+          },
+          "score": {
+            "games": 250,
+            "meanDifference": 0.636,
+            "ci95": [
+              -0.8785441910661996,
+              2.1505441910661998
+            ]
+          },
+          "firstPlaceRate": {
+            "games": 250,
+            "meanDifference": 0.016,
+            "ci95": [
+              -0.03487212689458853,
+              0.06687212689458853
+            ]
+          },
+          "lastPlaceRate": {
+            "games": 250,
+            "meanDifference": -0.008,
+            "ci95": [
+              -0.032822109072260186,
+              0.016822109072260186
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "retrain3m-pair2",
+      "options": {
+        "floorMultiplier": 2,
+        "acquisitionReserve": 1.2,
+        "bidScale": 1.6,
+        "holdGain": 1,
+        "terminalSpend": false,
+        "mode": "market-convert"
+      },
+      "summary": {
+        "games": 500,
+        "meanScore": 77.736,
+        "scoreStdErr": 0.8642653047728273,
+        "meanPlace": 2.662,
+        "firstPlaces": 161,
+        "outrightWins": 154,
+        "sharedFirsts": 7,
+        "winRate": 0.322,
+        "lastPlaces": 42,
+        "strictLasts": 38,
+        "lastRate": 0.084,
+        "meanCash": 15.15,
+        "meanTilesWon": 12.046,
+        "meanPaid": 162.586,
+        "meanUnplayedTiles": 0.478,
+        "meanMatchElapsedMs": 17.63147141799997
+      },
+      "byScenario": {
+        "convert-selfplay": {
+          "games": 250,
+          "meanScore": 75.156,
+          "scoreStdErr": 1.1212221960215583,
+          "meanPlace": 2.956,
+          "firstPlaces": 58,
+          "outrightWins": 57,
+          "sharedFirsts": 1,
+          "winRate": 0.232,
+          "lastPlaces": 25,
+          "strictLasts": 23,
+          "lastRate": 0.1,
+          "meanCash": 14.984,
+          "meanTilesWon": 11.724,
+          "meanPaid": 160.172,
+          "meanUnplayedTiles": 0.452,
+          "meanMatchElapsedMs": 18.021542175999954
+        },
+        "strong-mixed": {
+          "games": 250,
+          "meanScore": 80.316,
+          "scoreStdErr": 1.2973871549074607,
+          "meanPlace": 2.368,
+          "firstPlaces": 103,
+          "outrightWins": 97,
+          "sharedFirsts": 6,
+          "winRate": 0.412,
+          "lastPlaces": 17,
+          "strictLasts": 15,
+          "lastRate": 0.068,
+          "meanCash": 15.316,
+          "meanTilesWon": 12.368,
+          "meanPaid": 165,
+          "meanUnplayedTiles": 0.504,
+          "meanMatchElapsedMs": 17.24140065999998
+        }
+      },
+      "pairedAgainstBaseline": {
+        "place": {
+          "games": 500,
+          "meanDifference": -0.026,
+          "ci95": [
+            -0.0790328419136942,
+            0.027032841913694202
+          ]
+        },
+        "score": {
+          "games": 500,
+          "meanDifference": 1.072,
+          "ci95": [
+            0.4683858079228459,
+            1.6756141920771541
+          ]
+        },
+        "firstPlaceRate": {
+          "games": 500,
+          "meanDifference": 0.004,
+          "ci95": [
+            -0.018194302036463498,
+            0.026194302036463498
+          ]
+        },
+        "lastPlaceRate": {
+          "games": 500,
+          "meanDifference": -0.002,
+          "ci95": [
+            -0.015013006719731435,
+            0.011013006719731435
+          ]
+        }
+      },
+      "pairedByScenario": {
+        "convert-selfplay": {
+          "place": {
+            "games": 250,
+            "meanDifference": -0.004,
+            "ci95": [
+              -0.06118839908196616,
+              0.05318839908196617
+            ]
+          },
+          "score": {
+            "games": 250,
+            "meanDifference": 0.564,
+            "ci95": [
+              -0.10218586117699024,
+              1.2301858611769902
+            ]
+          },
+          "firstPlaceRate": {
+            "games": 250,
+            "meanDifference": -0.024,
+            "ci95": [
+              -0.0460184696476047,
+              -0.0019815303523953026
+            ]
+          },
+          "lastPlaceRate": {
+            "games": 250,
+            "meanDifference": -0.016,
+            "ci95": [
+              -0.031585255930193734,
+              -0.0004147440698062631
+            ]
+          }
+        },
+        "strong-mixed": {
+          "place": {
+            "games": 250,
+            "meanDifference": -0.048,
+            "ci95": [
+              -0.1373704207375752,
+              0.041370420737575186
+            ]
+          },
+          "score": {
+            "games": 250,
+            "meanDifference": 1.58,
+            "ci95": [
+              0.5757289231371376,
+              2.5842710768628625
+            ]
+          },
+          "firstPlaceRate": {
+            "games": 250,
+            "meanDifference": 0.032,
+            "ci95": [
+              -0.006279242521660865,
+              0.07027924252166087
+            ]
+          },
+          "lastPlaceRate": {
+            "games": 250,
+            "meanDifference": 0.012,
+            "ci95": [
+              -0.008730786294822646,
+              0.03273078629482265
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "retrain3m-pair0",
+      "options": {
+        "floorMultiplier": 1,
+        "acquisitionReserve": 1.2,
+        "bidScale": 1.6,
+        "holdGain": 1,
+        "terminalSpend": true,
+        "mode": "market-convert"
+      },
+      "summary": {
+        "games": 500,
+        "meanScore": 77.122,
+        "scoreStdErr": 0.8658600691327886,
+        "meanPlace": 2.69,
+        "firstPlaces": 156,
+        "outrightWins": 148,
+        "sharedFirsts": 8,
+        "winRate": 0.312,
+        "lastPlaces": 48,
+        "strictLasts": 44,
+        "lastRate": 0.096,
+        "meanCash": 15.504,
+        "meanTilesWon": 11.922,
+        "meanPaid": 161.618,
+        "meanUnplayedTiles": 0.388,
+        "meanMatchElapsedMs": 17.482503085999994
+      },
+      "byScenario": {
+        "convert-selfplay": {
+          "games": 250,
+          "meanScore": 74.36,
+          "scoreStdErr": 1.1439352917919916,
+          "meanPlace": 2.988,
+          "firstPlaces": 58,
+          "outrightWins": 57,
+          "sharedFirsts": 1,
+          "winRate": 0.232,
+          "lastPlaces": 33,
+          "strictLasts": 31,
+          "lastRate": 0.132,
+          "meanCash": 14.936,
+          "meanTilesWon": 11.612,
+          "meanPaid": 159.424,
+          "meanUnplayedTiles": 0.408,
+          "meanMatchElapsedMs": 17.854979688
+        },
+        "strong-mixed": {
+          "games": 250,
+          "meanScore": 79.884,
+          "scoreStdErr": 1.2786767507590517,
+          "meanPlace": 2.392,
+          "firstPlaces": 98,
+          "outrightWins": 91,
+          "sharedFirsts": 7,
+          "winRate": 0.392,
+          "lastPlaces": 15,
+          "strictLasts": 13,
+          "lastRate": 0.06,
+          "meanCash": 16.072,
+          "meanTilesWon": 12.232,
+          "meanPaid": 163.812,
+          "meanUnplayedTiles": 0.368,
+          "meanMatchElapsedMs": 17.110026483999995
+        }
+      },
+      "pairedAgainstBaseline": {
+        "place": {
+          "games": 500,
+          "meanDifference": 0.002,
+          "ci95": [
+            -0.04557474940303443,
+            0.049574749403034434
+          ]
+        },
+        "score": {
+          "games": 500,
+          "meanDifference": 0.458,
+          "ci95": [
+            -0.028758506986211962,
+            0.944758506986212
+          ]
+        },
+        "firstPlaceRate": {
+          "games": 500,
+          "meanDifference": -0.006,
+          "ci95": [
+            -0.025612565110674466,
+            0.013612565110674468
+          ]
+        },
+        "lastPlaceRate": {
+          "games": 500,
+          "meanDifference": 0.01,
+          "ci95": [
+            -0.002984578489774431,
+            0.02298457848977443
+          ]
+        }
+      },
+      "pairedByScenario": {
+        "convert-selfplay": {
+          "place": {
+            "games": 250,
+            "meanDifference": 0.028,
+            "ci95": [
+              -0.039029196587611975,
+              0.09502919658761197
+            ]
+          },
+          "score": {
+            "games": 250,
+            "meanDifference": -0.232,
+            "ci95": [
+              -0.7647170128214393,
+              0.30071701282143937
+            ]
+          },
+          "firstPlaceRate": {
+            "games": 250,
+            "meanDifference": -0.024,
+            "ci95": [
+              -0.04601846964760466,
+              -0.0019815303523953477
+            ]
+          },
+          "lastPlaceRate": {
+            "games": 250,
+            "meanDifference": 0.016,
+            "ci95": [
+              -0.006130296012625498,
+              0.0381302960126255
+            ]
+          }
+        },
+        "strong-mixed": {
+          "place": {
+            "games": 250,
+            "meanDifference": -0.024,
+            "ci95": [
+              -0.09151173744149596,
+              0.043511737441495967
+            ]
+          },
+          "score": {
+            "games": 250,
+            "meanDifference": 1.148,
+            "ci95": [
+              0.3410548995408539,
+              1.9549451004591458
+            ]
+          },
+          "firstPlaceRate": {
+            "games": 250,
+            "meanDifference": 0.012,
+            "ci95": [
+              -0.020355679538429993,
+              0.04435567953842999
+            ]
+          },
+          "lastPlaceRate": {
+            "games": 250,
+            "meanDifference": 0.004,
+            "ci95": [
+              -0.009597444598099813,
+              0.017597444598099813
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "completedTrackedGameCounts": {
+    "searchPhysicalLowerBound": 21394,
+    "freshFinal": 2000
+  },
+  "searchIslands": [
+    {
+      "island": 0,
+      "generations": 4,
+      "actualFullMatches": 3164
+    },
+    {
+      "island": 1,
+      "generations": 4,
+      "actualFullMatches": 3257
+    },
+    {
+      "island": 2,
+      "generations": 4,
+      "actualFullMatches": 3298
+    },
+    {
+      "island": 3,
+      "generations": 4,
+      "actualFullMatches": 3227
+    },
+    {
+      "island": 4,
+      "generations": 5,
+      "actualFullMatches": null
+    },
+    {
+      "island": 5,
+      "generations": 5,
+      "actualFullMatches": null
+    }
+  ],
+  "limitations": "Final 500 paired NEVER-SEEN bags per policy exclude empirical/idle cases. Normal-approximation paired 95% intervals. Three finalists were frozen before this final run; search-only later elites were not substituted. Incomplete cutoff-boundary search evaluations excluded conservatively from recorded totals. Local models are not live proof."
+}

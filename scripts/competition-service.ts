@@ -16,6 +16,8 @@ if (action === 'stop') {
   if (result.status !== 0) { console.log('Competition runner is not loaded.'); process.exitCode = 1; }
   else console.log(result.stdout.split('\n').filter(line => /state =|pid =|last exit code =|program =/.test(line)).join('\n'));
 } else if (action === 'start') {
+  const tournamentId = process.env.TOURNAMENT_ID ?? '2';
+  if (!/^\d+$/.test(tournamentId)) throw new Error('TOURNAMENT_ID must be a nonnegative integer.');
   const policy = process.argv[3];
   const modes = ['starter', 'greedy', 'hoard', 'adaptive', 'aggressive', 'patient', 'market', 'market-focused', 'market-all', 'market-budget', 'market-pressure', 'market-margin', 'market-quality', 'market-convert'];
   if (!policy || !modes.includes(policy)) throw new Error('Usage: competition-service start <supported-policy> [--options-file=public-config.json]');
@@ -41,7 +43,7 @@ if (action === 'stop') {
   const xml = (text: string) => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
   const publicUntil = process.argv.find(arg => arg.startsWith('--public-until='))?.slice(15);
   if (publicUntil && !Number.isFinite(Date.parse(publicUntil))) throw new Error('--public-until must be an ISO timestamp.');
-  const env = { BOT_NAME: 'bigdawg', STRATEGY_MODE: policy, STRATEGY_OPTIONS: JSON.stringify(selectedOptions), POLICY_LABEL: selectedLabel, TOURNAMENT_ID: '2', TOURNAMENT_ONLY: publicUntil ? '0' : '1', EXIT_AFTER_TOURNAMENT: '1', RESULTS_FILE: resolve('.research/live-340.json') };
+  const env = { BOT_NAME: 'bigdawg', STRATEGY_MODE: policy, STRATEGY_OPTIONS: JSON.stringify(selectedOptions), POLICY_LABEL: selectedLabel, TOURNAMENT_ID: tournamentId, TOURNAMENT_ONLY: publicUntil ? '0' : '1', EXIT_AFTER_TOURNAMENT: '1', RESULTS_FILE: resolve('.research/live-340.json') };
   const args = ['/usr/bin/caffeinate', '-i', process.execPath, '--env-file-if-exists=.env', resolve('dist/bot.mjs')];
   if (publicUntil) args.push(`--until=${publicUntil}`);
   writeFileSync(plist, `<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict>
@@ -72,5 +74,5 @@ if (action === 'stop') {
     if (remaining > 0) Atomics.wait(pause, 0, 0, Math.min(100, remaining));
   }
   if (!loaded) throw new Error(`Competition runner reload failed after bounded retries: ${lastError}`);
-  console.log(`Competition runner started: ${selectedLabel} (${policy}); ${publicUntil ? `public practice until ${publicUntil}, then tournament seating` : 'tournament 2 only'}; automatic crash restart; idle sleep inhibited while it runs.`);
+  console.log(`Competition runner started: ${selectedLabel} (${policy}); ${publicUntil ? `public practice until ${publicUntil}, then tournament ${tournamentId} seating` : `tournament ${tournamentId} only`}; automatic crash restart; idle sleep inhibited while it runs.`);
 } else throw new Error('Action must be start, stop or status.');

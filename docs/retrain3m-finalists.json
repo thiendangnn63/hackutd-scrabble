@@ -1,0 +1,35 @@
+[
+  {
+    "label": "retrain3m-pair0",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 1.2,
+      "bidScale": 1.6,
+      "holdGain": 1,
+      "terminalSpend": true,
+      "mode": "market-convert"
+    }
+  },
+  {
+    "label": "retrain3m-pair2",
+    "options": {
+      "floorMultiplier": 2,
+      "acquisitionReserve": 1.2,
+      "bidScale": 1.6,
+      "holdGain": 1,
+      "terminalSpend": false,
+      "mode": "market-convert"
+    }
+  },
+  {
+    "label": "retrain3m-pair4",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 2,
+      "acquisitionReserve": 1.5,
+      "bidScale": 1.6,
+      "holdGain": 1.3,
+      "terminalSpend": false
+    }
+  }
+]
