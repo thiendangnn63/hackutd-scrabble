@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.research/
+.env
+.env.*
+!.env.example
+.token-*
+.secrets/
+.impeccable/
+.playwright-mcp/
+*.log
+.DS_Store

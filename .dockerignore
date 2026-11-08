@@ -1,0 +1,8 @@
+.git
+.env*
+.token-*
+.secrets
+.research
+node_modules
+dist
+*.log

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "seed": 402001,
+  "scenario": "value",
+  "phaseFilter": "tuning",
+  "gamesPerCandidatePerFormatPerPhase": 60,
+  "candidates": [
+    "market",
+    "market-all",
+    "market-budget",
+    "market-pressure"
+  ],
+  "dictionaryWords": 172820,
+  "setupMs": 265.98679200000004,
+  "elapsedMs": 2368.491334,
+  "decisionLatencyMs": {
+    "samples": 67049,
+    "p50": 0.003459000000020751,
+    "p95": 0.0750409999999988,
+    "p99": 0.13962500000002365,
+    "max": 2.063792000000035
+  },
+  "decisionLatencyByModeMs": {
+    "market": {
+      "samples": 16743,
+      "p50": 0.003708000000017364,
+      "p95": 0.07274999999981446,
+      "p99": 0.132000000000005,
+      "max": 2.063792000000035
+    },
+    "market-all": {
+      "samples": 16780,
+      "p50": 0.003375000000005457,
+      "p95": 0.08108299999980773,
+      "p99": 0.14595799999983683,
+      "max": 0.34600000000000364
+    },
+    "market-budget": {
+      "samples": 16768,
+      "p50": 0.0034580000001369626,
+      "p95": 0.07779200000004494,
+      "p99": 0.14241600000013932,
+      "max": 0.9615830000000187
+    },
+    "market-pressure": {
+      "samples": 16758,
+      "p50": 0.003333999999995285,
+      "p95": 0.0652500000001055,
+      "p99": 0.13670799999999872,
+      "max": 0.39600000000018554
+    }
+  },
+  "coldDefaultDecisionLatencyMs": {
+    "samples": 192,
+    "p50": 0.14858300000014424,
+    "p95": 1.1740829999998823,
+    "p99": 2.101749999999811,
+    "max": 2.143290999999863
+  },
+  "methodology": "Six real-client policies, five hidden dealt tiles, seeded 98-tile bag, seat rotation, selected opponent scenario (mixed uses two heterogeneous lineups), paired seeds across candidates, disjoint tuning/holdout seed ranges, random bid ties, reserve 1, floor rewards, no-bid discard, final-tile unusable. Immediate idealized client reactions; no network/SDK timing modeled. No policy sees opponents racks or future bag.",
+  "phases": {
+    "tuning": {
+      "Vickrey": {
+        "market": {
+          "meanAuctionsWon": 9.883333333333333,
+          "meanTotalPaid": 107.05,
+          "games": 60,
+          "meanScore": 68.76666666666667,
+          "meanPlace": 2.2333333333333334,
+          "firstPlaceShare": 0.4666666666666667,
+          "tiedLeadRate": 0.48333333333333334,
+          "meanBalance": 61.71666666666667,
+          "meanUnplayedTiles": 0.55,
+          "scoreStdErr": 2.2109596897115043
+        },
+        "market-all": {
+          "meanAuctionsWon": 14.15,
+          "meanTotalPaid": 165.45,
+          "games": 60,
+          "meanScore": 73.98333333333333,
+          "meanPlace": 1.6,
+          "firstPlaceShare": 0.6083333333333333,
+          "tiedLeadRate": 0.6166666666666667,
+          "meanBalance": 8.533333333333333,
+          "meanUnplayedTiles": 0.5333333333333333,
+          "scoreStdErr": 1.9665984379623251
+        },
+        "market-budget": {
+          "meanAuctionsWon": 13.6,
+          "meanTotalPaid": 162.33333333333334,
+          "games": 60,
+          "meanScore": 69.7,
+          "meanPlace": 1.7333333333333334,
+          "firstPlaceShare": 0.5583333333333333,
+          "tiedLeadRate": 0.5833333333333334,
+          "meanBalance": 7.366666666666666,
+          "meanUnplayedTiles": 0.6666666666666666,
+          "scoreStdErr": 2.014817988162635
+        },
+        "market-pressure": {
+          "meanAuctionsWon": 13.233333333333333,
+          "meanTotalPaid": 160.81666666666666,
+          "games": 60,
+          "meanScore": 67.66666666666667,
+          "meanPlace": 2,
+          "firstPlaceShare": 0.5583333333333333,
+          "tiedLeadRate": 0.5666666666666667,
+          "meanBalance": 6.85,
+          "meanUnplayedTiles": 0.6833333333333333,
+          "scoreStdErr": 2.1092567929144486
+        }
+      },
+      "FirstPrice": {
+        "market": {
+          "meanAuctionsWon": 12.933333333333334,
+          "meanTotalPaid": 163.36666666666667,
+          "games": 60,
+          "meanScore": 67.95,
+          "meanPlace": 1.7333333333333334,
+          "firstPlaceShare": 0.625,
+          "tiedLeadRate": 0.6333333333333333,
+          "meanBalance": 4.583333333333333,
+          "meanUnplayedTiles": 0.65,
+          "scoreStdErr": 1.9039692408378077
+        },
+        "market-all": {
+          "meanAuctionsWon": 12.816666666666666,
+          "meanTotalPaid": 162.7,
+          "games": 60,
+          "meanScore": 67.95,
+          "meanPlace": 1.7333333333333334,
+          "firstPlaceShare": 0.625,
+          "tiedLeadRate": 0.6333333333333333,
+          "meanBalance": 5.25,
+          "meanUnplayedTiles": 0.5333333333333333,
+          "scoreStdErr": 1.9039692408378077
+        },
+        "market-budget": {
+          "meanAuctionsWon": 11.866666666666667,
+          "meanTotalPaid": 155.7,
+          "games": 60,
+          "meanScore": 59.68333333333333,
+          "meanPlace": 2.3,
+          "firstPlaceShare": 0.38888888888888895,
+          "tiedLeadRate": 0.4,
+          "meanBalance": 3.9833333333333334,
+          "meanUnplayedTiles": 0.75,
+          "scoreStdErr": 1.727395032118252
+        },
+        "market-pressure": {
+          "meanAuctionsWon": 11.183333333333334,
+          "meanTotalPaid": 153.35,
+          "games": 60,
+          "meanScore": 57.05,
+          "meanPlace": 2.7,
+          "firstPlaceShare": 0.3333333333333333,
+          "tiedLeadRate": 0.35,
+          "meanBalance": 3.7,
+          "meanUnplayedTiles": 0.8833333333333333,
+          "scoreStdErr": 1.8943008489188533
+        }
+      }
+    }
+  }
+}

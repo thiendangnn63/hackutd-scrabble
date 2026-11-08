@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-11-08T04:07:09.404Z",
+  "botId": "340",
+  "matchId": "47002",
+  "status": "Ended",
+  "auctionType": "Vickrey",
+  "startingRackSize": 5,
+  "auctionDurationMs": 1000,
+  "score": 54,
+  "balance": 104,
+  "place": 5,
+  "participants": [
+    {
+      "botId": "211",
+      "score": 98,
+      "balance": 11
+    },
+    {
+      "botId": "207",
+      "score": 87,
+      "balance": 13
+    },
+    {
+      "botId": "165",
+      "score": 86,
+      "balance": 4
+    },
+    {
+      "botId": "259",
+      "score": 86,
+      "balance": 6
+    },
+    {
+      "botId": "340",
+      "score": 54,
+      "balance": 104
+    },
+    {
+      "botId": "241",
+      "score": 54,
+      "balance": 9
+    }
+  ],
+  "auctionsCompleted": 68,
+  "auctionsWon": 3,
+  "totalPaid": 50,
+  "words": [
+    {
+      "word": "BRAZENS",
+      "reward": 54
+    }
+  ]
+}

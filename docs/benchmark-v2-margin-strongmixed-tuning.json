@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "seed": 402001,
+  "scenario": "strongmixed",
+  "phaseFilter": "tuning",
+  "gamesPerCandidatePerFormatPerPhase": 60,
+  "candidates": [
+    "market-all",
+    "market-margin"
+  ],
+  "dictionaryWords": 172820,
+  "setupMs": 304.785792,
+  "elapsedMs": 3981.131625,
+  "decisionLatencyMs": {
+    "samples": 33498,
+    "p50": 0.003958000000011452,
+    "p95": 0.09445799999991777,
+    "p99": 0.17908299999999144,
+    "max": 1.2043340000000171
+  },
+  "decisionLatencyByModeMs": {
+    "market-all": {
+      "samples": 16749,
+      "p50": 0.0039999999999054126,
+      "p95": 0.09495800000013332,
+      "p99": 0.17974999999978536,
+      "max": 0.9126249999999345
+    },
+    "market-margin": {
+      "samples": 16749,
+      "p50": 0.0038750000001073204,
+      "p95": 0.09408399999983885,
+      "p99": 0.17858400000022812,
+      "max": 1.2043340000000171
+    }
+  },
+  "coldDefaultDecisionLatencyMs": {
+    "samples": 192,
+    "p50": 0.1382080000003043,
+    "p95": 1.188999999999396,
+    "p99": 2.0326249999998254,
+    "max": 2.2907920000006925
+  },
+  "methodology": "Six real-client policies, five hidden dealt tiles, seeded 98-tile bag, seat rotation, selected opponent scenario (mixed uses two heterogeneous lineups), paired seeds across candidates, disjoint tuning/holdout seed ranges, random bid ties, reserve 1, floor rewards, no-bid discard, final-tile unusable. Immediate idealized client reactions; no network/SDK timing modeled. No policy sees opponents racks or future bag.",
+  "phases": {
+    "tuning": {
+      "Vickrey": {
+        "market-all": {
+          "meanAuctionsWon": 12.066666666666666,
+          "meanTotalPaid": 156.3,
+          "games": 60,
+          "meanScore": 69.08333333333333,
+          "meanPlace": 2.533333333333333,
+          "firstPlaceShare": 0.3333333333333333,
+          "tiedLeadRate": 0.35,
+          "meanBalance": 12.783333333333333,
+          "meanUnplayedTiles": 0.36666666666666664,
+          "scoreStdErr": 1.9275422228100818
+        },
+        "market-margin": {
+          "meanAuctionsWon": 12.066666666666666,
+          "meanTotalPaid": 156.3,
+          "games": 60,
+          "meanScore": 69.05,
+          "meanPlace": 2.5,
+          "firstPlaceShare": 0.35833333333333334,
+          "tiedLeadRate": 0.36666666666666664,
+          "meanBalance": 12.75,
+          "meanUnplayedTiles": 0.38333333333333336,
+          "scoreStdErr": 1.8868299124839174
+        }
+      },
+      "FirstPrice": {
+        "market-all": {
+          "meanAuctionsWon": 12.1,
+          "meanTotalPaid": 158.91666666666666,
+          "games": 60,
+          "meanScore": 65.98333333333333,
+          "meanPlace": 2.6666666666666665,
+          "firstPlaceShare": 0.375,
+          "tiedLeadRate": 0.38333333333333336,
+          "meanBalance": 7.066666666666666,
+          "meanUnplayedTiles": 0.4666666666666667,
+          "scoreStdErr": 2.0034562884704217
+        },
+        "market-margin": {
+          "meanAuctionsWon": 12.1,
+          "meanTotalPaid": 158.91666666666666,
+          "games": 60,
+          "meanScore": 65.98333333333333,
+          "meanPlace": 2.6666666666666665,
+          "firstPlaceShare": 0.375,
+          "tiedLeadRate": 0.38333333333333336,
+          "meanBalance": 7.066666666666666,
+          "meanUnplayedTiles": 0.4666666666666667,
+          "scoreStdErr": 2.0034562884704217
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-11-08T04:13:42.785Z",
+  "botId": "340",
+  "matchId": "47068",
+  "status": "Ended",
+  "auctionType": "Vickrey",
+  "startingRackSize": 5,
+  "auctionDurationMs": 1000,
+  "score": 53,
+  "balance": 21,
+  "place": 5,
+  "participants": [
+    {
+      "botId": "207",
+      "score": 119,
+      "balance": 2
+    },
+    {
+      "botId": "252",
+      "score": 87,
+      "balance": 12
+    },
+    {
+      "botId": "323",
+      "score": 83,
+      "balance": 2
+    },
+    {
+      "botId": "239",
+      "score": 56,
+      "balance": 30
+    },
+    {
+      "botId": "340",
+      "score": 53,
+      "balance": 21
+    },
+    {
+      "botId": "182",
+      "score": 53,
+      "balance": 27
+    }
+  ],
+  "auctionsCompleted": 68,
+  "auctionsWon": 10,
+  "totalPaid": 132,
+  "words": [
+    {
+      "word": "SWEVEN",
+      "reward": 30
+    },
+    {
+      "word": "ENTERAL",
+      "reward": 21
+    },
+    {
+      "word": "AT",
+      "reward": 2
+    }
+  ]
+}

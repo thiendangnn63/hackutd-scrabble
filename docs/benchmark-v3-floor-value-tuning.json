@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "seed": 744001,
+  "scenario": "value",
+  "phaseFilter": "tuning",
+  "formats": [
+    "Vickrey"
+  ],
+  "gamesPerCandidatePerFormatPerPhase": 60,
+  "candidates": [
+    "market-all",
+    "floor-1.2",
+    "reserve-0.5",
+    "reserve-0.8",
+    "terminal-spend"
+  ],
+  "dictionaryWords": 172820,
+  "setupMs": 305.843834,
+  "elapsedMs": 1775.961458,
+  "decisionLatencyMs": {
+    "samples": 41972,
+    "p50": 0.003500000000030923,
+    "p95": 0.09133299999996325,
+    "p99": 0.16212500000006003,
+    "max": 2.012875000000008
+  },
+  "decisionLatencyByModeMs": {
+    "market-all": {
+      "samples": 8397,
+      "p50": 0.003917000000001281,
+      "p95": 0.09991700000000492,
+      "p99": 0.17529099999995879,
+      "max": 2.012875000000008
+    },
+    "floor-1.2": {
+      "samples": 8395,
+      "p50": 0.003417000000013104,
+      "p95": 0.0927920000000313,
+      "p99": 0.16041599999994105,
+      "max": 0.8947920000000522
+    },
+    "reserve-0.5": {
+      "samples": 8385,
+      "p50": 0.003500000000030923,
+      "p95": 0.08054200000015044,
+      "p99": 0.15991700000017772,
+      "max": 0.9316659999999501
+    },
+    "reserve-0.8": {
+      "samples": 8398,
+      "p50": 0.0034580000001369626,
+      "p95": 0.08987500000012005,
+      "p99": 0.15745800000013332,
+      "max": 0.2925000000000182
+    },
+    "terminal-spend": {
+      "samples": 8397,
+      "p50": 0.0034160000000156288,
+      "p95": 0.09195799999997689,
+      "p99": 0.15312500000004547,
+      "max": 1.2086249999999836
+    }
+  },
+  "coldDefaultDecisionLatencyMs": {
+    "samples": 192,
+    "p50": 0.11812499999996362,
+    "p95": 0.8386660000001029,
+    "p99": 2.401792000000114,
+    "max": 2.654041000000234
+  },
+  "methodology": "Six real-client policies, five hidden dealt tiles, seeded 98-tile bag, seat rotation, selected opponent scenario (mixed uses two heterogeneous lineups), paired seeds across candidates, disjoint tuning/holdout seed ranges, random bid ties, reserve 1, floor rewards, no-bid discard, final-tile unusable. Immediate idealized client reactions; no network/SDK timing modeled. No policy sees opponents racks or future bag.",
+  "phases": {
+    "tuning": {
+      "Vickrey": {
+        "market-all": {
+          "meanAuctionsWon": 14.133333333333333,
+          "meanTotalPaid": 167.1,
+          "games": 60,
+          "meanScore": 74.45,
+          "meanPlace": 1.6666666666666667,
+          "firstPlaceShare": 0.5333333333333333,
+          "tiedLeadRate": 0.55,
+          "meanBalance": 7.35,
+          "meanUnplayedTiles": 0.6833333333333333,
+          "scoreStdErr": 2.152311200273989
+        },
+        "floor-1.2": {
+          "meanAuctionsWon": 13.933333333333334,
+          "meanTotalPaid": 165.48333333333332,
+          "games": 60,
+          "meanScore": 73.53333333333333,
+          "meanPlace": 1.8,
+          "firstPlaceShare": 0.5,
+          "tiedLeadRate": 0.5,
+          "meanBalance": 8.05,
+          "meanUnplayedTiles": 0.6166666666666667,
+          "scoreStdErr": 2.251235275055338
+        },
+        "reserve-0.5": {
+          "meanAuctionsWon": 13.733333333333333,
+          "meanTotalPaid": 162.91666666666666,
+          "games": 60,
+          "meanScore": 69.85,
+          "meanPlace": 1.8,
+          "firstPlaceShare": 0.5222222222222223,
+          "tiedLeadRate": 0.5333333333333333,
+          "meanBalance": 6.933333333333334,
+          "meanUnplayedTiles": 0.9333333333333333,
+          "scoreStdErr": 2.151707376194161
+        },
+        "reserve-0.8": {
+          "meanAuctionsWon": 14,
+          "meanTotalPaid": 167.4,
+          "games": 60,
+          "meanScore": 74.91666666666667,
+          "meanPlace": 1.5333333333333334,
+          "firstPlaceShare": 0.6,
+          "tiedLeadRate": 0.6333333333333333,
+          "meanBalance": 7.516666666666667,
+          "meanUnplayedTiles": 0.65,
+          "scoreStdErr": 1.9453394496560097
+        },
+        "terminal-spend": {
+          "meanAuctionsWon": 14.2,
+          "meanTotalPaid": 168.2,
+          "games": 60,
+          "meanScore": 73.9,
+          "meanPlace": 1.6166666666666667,
+          "firstPlaceShare": 0.5583333333333333,
+          "tiedLeadRate": 0.5666666666666667,
+          "meanBalance": 5.7,
+          "meanUnplayedTiles": 0.7666666666666667,
+          "scoreStdErr": 2.115012254375419
+        }
+      }
+    }
+  }
+}

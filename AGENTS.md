@@ -1,0 +1,3 @@
+# hackutd-scrabble
+
+Work only in this project, its vault section if present, and vault/Shared. Read docs/RULES.md and docs/STRATEGY.md for the competition contract and measured strategy. Internal text is English. Do not inspect sibling projects. Do not edit generated src/module_bindings manually. Never commit .env, .token-*, tokens, .research, node_modules, or tool caches. Use the server's ENABLE dictionary, not an unrelated word corpus. Run npm run check and npm test before shipping. Record experiments and lessons in docs/ with exact seeds and limitations. Use the thiendangnn63 GitHub connection for this repository. Remote: https://github.com/thiendangnn63/hackutd-scrabble.

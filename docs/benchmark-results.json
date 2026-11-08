@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "seed": 28001,
+  "scenario": "mixed",
+  "phaseFilter": "both",
+  "gamesPerCandidatePerFormatPerPhase": 60,
+  "candidates": [
+    "starter",
+    "greedy",
+    "hoard",
+    "adaptive",
+    "aggressive",
+    "patient"
+  ],
+  "dictionaryWords": 172820,
+  "setupMs": 227.54125,
+  "elapsedMs": 26389.200958,
+  "decisionLatencyMs": {
+    "samples": 200766,
+    "p50": 0.0016669999999976426,
+    "p95": 0.1511659999996482,
+    "p99": 0.3807919999999285,
+    "max": 5.794541000000208
+  },
+  "decisionLatencyByModeMs": {
+    "starter": {
+      "samples": 33285,
+      "p50": 0.001082999999198364,
+      "p95": 0.002082999999402091,
+      "p99": 0.004291999999622931,
+      "max": 3.0537500000000364
+    },
+    "greedy": {
+      "samples": 33291,
+      "p50": 0.0010830000001078588,
+      "p95": 0.00204200000007404,
+      "p99": 0.004042000000481494,
+      "max": 2.610208000001876
+    },
+    "hoard": {
+      "samples": 33025,
+      "p50": 0.0010839999995368998,
+      "p95": 0.002166999998735264,
+      "p99": 0.01170799999999872,
+      "max": 0.09500000000116415
+    },
+    "adaptive": {
+      "samples": 33703,
+      "p50": 0.0072079999999914435,
+      "p95": 0.2522500000013679,
+      "p99": 0.4825840000012249,
+      "max": 4.3865420000001905
+    },
+    "aggressive": {
+      "samples": 33919,
+      "p50": 0.006832999999460299,
+      "p95": 0.2330419999998412,
+      "p99": 0.4830839999995078,
+      "max": 4.831624999998894
+    },
+    "patient": {
+      "samples": 33543,
+      "p50": 0.007250000002386514,
+      "p95": 0.2593750000014552,
+      "p99": 0.5157909999998083,
+      "max": 5.794541000000208
+    }
+  },
+  "coldAggressiveDecisionLatencyMs": {
+    "samples": 192,
+    "p50": 0.3494170000012673,
+    "p95": 8.584167000000889,
+    "p99": 14.731583000000683,
+    "max": 20.946124999998574
+  },
+  "methodology": "Six real-client policies, five hidden dealt tiles, seeded 98-tile bag, seat rotation, selected opponent scenario (mixed uses two heterogeneous lineups), paired seeds across candidates, disjoint tuning/holdout seed ranges, random bid ties, reserve 1, floor rewards, no-bid discard, final-tile unusable. Immediate idealized client reactions; no network/SDK timing modeled. No policy sees opponents racks or future bag.",
+  "phases": {
+    "tuning": {
+      "Vickrey": {
+        "starter": {
+          "games": 60,
+          "meanScore": 13.916666666666666,
+          "meanPlace": 4.866666666666666,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 98.88333333333334,
+          "meanUnplayedTiles": 1.9,
+          "scoreStdErr": 0.6648102684465809
+        },
+        "greedy": {
+          "games": 60,
+          "meanScore": 14.416666666666666,
+          "meanPlace": 4.766666666666667,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 99.15,
+          "meanUnplayedTiles": 1.8833333333333333,
+          "scoreStdErr": 0.6427745590095965
+        },
+        "hoard": {
+          "games": 60,
+          "meanScore": 24.4,
+          "meanPlace": 3.9833333333333334,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 111.33333333333333,
+          "meanUnplayedTiles": 1.35,
+          "scoreStdErr": 1.5736531322978902
+        },
+        "adaptive": {
+          "games": 60,
+          "meanScore": 128.21666666666667,
+          "meanPlace": 2.033333333333333,
+          "firstPlaceShare": 0.3333333333333333,
+          "tiedLeadRate": 0.35,
+          "meanBalance": 86.98333333333333,
+          "meanUnplayedTiles": 0.45,
+          "scoreStdErr": 5.651912913844956
+        },
+        "aggressive": {
+          "games": 60,
+          "meanScore": 148.43333333333334,
+          "meanPlace": 1.5333333333333334,
+          "firstPlaceShare": 0.55,
+          "tiedLeadRate": 0.55,
+          "meanBalance": 64.41666666666667,
+          "meanUnplayedTiles": 0.4166666666666667,
+          "scoreStdErr": 5.753719831732474
+        },
+        "patient": {
+          "games": 60,
+          "meanScore": 106.76666666666667,
+          "meanPlace": 2.3833333333333333,
+          "firstPlaceShare": 0.13333333333333333,
+          "tiedLeadRate": 0.13333333333333333,
+          "meanBalance": 104.16666666666667,
+          "meanUnplayedTiles": 0.4,
+          "scoreStdErr": 4.770457976253592
+        }
+      },
+      "FirstPrice": {
+        "starter": {
+          "games": 60,
+          "meanScore": 19.916666666666668,
+          "meanPlace": 5.2,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 93.35,
+          "meanUnplayedTiles": 1.85,
+          "scoreStdErr": 0.9343693805769208
+        },
+        "greedy": {
+          "games": 60,
+          "meanScore": 20.883333333333333,
+          "meanPlace": 5.116666666666666,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 94.23333333333333,
+          "meanUnplayedTiles": 1.7833333333333334,
+          "scoreStdErr": 1.0118204399183357
+        },
+        "hoard": {
+          "games": 60,
+          "meanScore": 35.45,
+          "meanPlace": 4.016666666666667,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 112.81666666666666,
+          "meanUnplayedTiles": 1.6,
+          "scoreStdErr": 1.770509358865552
+        },
+        "adaptive": {
+          "games": 60,
+          "meanScore": 106.65,
+          "meanPlace": 1.9833333333333334,
+          "firstPlaceShare": 0.4,
+          "tiedLeadRate": 0.4,
+          "meanBalance": 54.233333333333334,
+          "meanUnplayedTiles": 0.36666666666666664,
+          "scoreStdErr": 4.392264965302495
+        },
+        "aggressive": {
+          "games": 60,
+          "meanScore": 109.85,
+          "meanPlace": 1.7333333333333334,
+          "firstPlaceShare": 0.5,
+          "tiedLeadRate": 0.5,
+          "meanBalance": 18.766666666666666,
+          "meanUnplayedTiles": 0.6333333333333333,
+          "scoreStdErr": 3.339865774223645
+        },
+        "patient": {
+          "games": 60,
+          "meanScore": 85.35,
+          "meanPlace": 2.3666666666666667,
+          "firstPlaceShare": 0.15,
+          "tiedLeadRate": 0.15,
+          "meanBalance": 82.33333333333333,
+          "meanUnplayedTiles": 0.4166666666666667,
+          "scoreStdErr": 3.7144415826859407
+        }
+      }
+    },
+    "holdout": {
+      "Vickrey": {
+        "starter": {
+          "games": 60,
+          "meanScore": 14.916666666666666,
+          "meanPlace": 4.75,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 99.25,
+          "meanUnplayedTiles": 1.9,
+          "scoreStdErr": 0.9240330620771511
+        },
+        "greedy": {
+          "games": 60,
+          "meanScore": 15.333333333333334,
+          "meanPlace": 4.666666666666667,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 99.68333333333334,
+          "meanUnplayedTiles": 1.8333333333333333,
+          "scoreStdErr": 0.9099781665806513
+        },
+        "hoard": {
+          "games": 60,
+          "meanScore": 23.083333333333332,
+          "meanPlace": 4.083333333333333,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 109.71666666666667,
+          "meanUnplayedTiles": 1.85,
+          "scoreStdErr": 1.6172257173059148
+        },
+        "adaptive": {
+          "games": 60,
+          "meanScore": 128.58333333333334,
+          "meanPlace": 2.033333333333333,
+          "firstPlaceShare": 0.3333333333333333,
+          "tiedLeadRate": 0.3333333333333333,
+          "meanBalance": 87.63333333333334,
+          "meanUnplayedTiles": 0.43333333333333335,
+          "scoreStdErr": 5.966587364937138
+        },
+        "aggressive": {
+          "games": 60,
+          "meanScore": 142.38333333333333,
+          "meanPlace": 1.6666666666666667,
+          "firstPlaceShare": 0.55,
+          "tiedLeadRate": 0.55,
+          "meanBalance": 64.45,
+          "meanUnplayedTiles": 0.38333333333333336,
+          "scoreStdErr": 6.1709219552492955
+        },
+        "patient": {
+          "games": 60,
+          "meanScore": 103.66666666666667,
+          "meanPlace": 2.533333333333333,
+          "firstPlaceShare": 0.13333333333333333,
+          "tiedLeadRate": 0.13333333333333333,
+          "meanBalance": 99.65,
+          "meanUnplayedTiles": 0.35,
+          "scoreStdErr": 5.175216181333925
+        }
+      },
+      "FirstPrice": {
+        "starter": {
+          "games": 60,
+          "meanScore": 20.316666666666666,
+          "meanPlace": 4.833333333333333,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 91.91666666666667,
+          "meanUnplayedTiles": 2.1,
+          "scoreStdErr": 0.8926858054597391
+        },
+        "greedy": {
+          "games": 60,
+          "meanScore": 21.266666666666666,
+          "meanPlace": 4.833333333333333,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 92.96666666666667,
+          "meanUnplayedTiles": 2.0833333333333335,
+          "scoreStdErr": 0.9937279768136106
+        },
+        "hoard": {
+          "games": 60,
+          "meanScore": 36.36666666666667,
+          "meanPlace": 4,
+          "firstPlaceShare": 0,
+          "tiedLeadRate": 0,
+          "meanBalance": 112.16666666666667,
+          "meanUnplayedTiles": 1.8,
+          "scoreStdErr": 1.899890967235303
+        },
+        "adaptive": {
+          "games": 60,
+          "meanScore": 109.11666666666666,
+          "meanPlace": 1.9333333333333333,
+          "firstPlaceShare": 0.4166666666666667,
+          "tiedLeadRate": 0.4166666666666667,
+          "meanBalance": 58.833333333333336,
+          "meanUnplayedTiles": 0.4,
+          "scoreStdErr": 4.941299016439722
+        },
+        "aggressive": {
+          "games": 60,
+          "meanScore": 111.63333333333334,
+          "meanPlace": 1.6333333333333333,
+          "firstPlaceShare": 0.5583333333333333,
+          "tiedLeadRate": 0.5666666666666667,
+          "meanBalance": 19.483333333333334,
+          "meanUnplayedTiles": 0.5,
+          "scoreStdErr": 3.1368023830339005
+        },
+        "patient": {
+          "games": 60,
+          "meanScore": 93.65,
+          "meanPlace": 2.316666666666667,
+          "firstPlaceShare": 0.24166666666666667,
+          "tiedLeadRate": 0.25,
+          "meanBalance": 84.31666666666666,
+          "meanUnplayedTiles": 0.35,
+          "scoreStdErr": 4.332756915161026
+        }
+      }
+    }
+  }
+}
