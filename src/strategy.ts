@@ -16,7 +16,7 @@ export interface StrategyContext {
   recentAuctionPrices?: readonly PublicAuctionPrice[];
 }
 export type StrategyMode = 'starter' | 'greedy' | 'hoard' | 'adaptive' | 'aggressive' | 'patient' | 'market' | 'market-focused' | 'market-all' | 'market-budget' | 'market-pressure' | 'market-margin' | 'market-quality' | 'market-convert';
-export interface StrategyOptions { mode?: StrategyMode; bidScale?: number; holdGain?: number; floorMultiplier?: number; acquisitionReserve?: number; terminalSpend?: boolean; letterPrices?: boolean; lastUsableAllIn?: boolean }
+export interface StrategyOptions { mode?: StrategyMode; bidScale?: number; holdGain?: number; floorMultiplier?: number; acquisitionReserve?: number; terminalSpend?: boolean; letterPrices?: boolean; lastUsableAllIn?: boolean; qualityAcquisition?: boolean }
 
 const VOWELS = new Set('AEIOU');
 const size = (rack: Rack): number => [...rack.values()].reduce((a, b) => a + b, 0);
@@ -31,6 +31,7 @@ export class Strategy {
   private readonly terminalSpend: boolean;
   private readonly useLetterPrices: boolean;
   private readonly lastUsableAllIn: boolean;
+  private readonly qualityAcquisition: boolean;
   constructor(readonly engine: WordEngine, options: StrategyOptions | StrategyMode = {}) {
     if (typeof options === 'string') options = { mode: options };
     this.mode = options.mode ?? 'market-convert';
@@ -39,6 +40,7 @@ export class Strategy {
     this.terminalSpend=options.terminalSpend??false;
     this.useLetterPrices=options.letterPrices??false;
     this.lastUsableAllIn=options.lastUsableAllIn??false;
+    this.qualityAcquisition=options.qualityAcquisition??false;
     this.bidScale = options.bidScale ?? ((this.mode === 'aggressive' || this.mode === 'market' || this.mode === 'market-focused' || this.mode.startsWith('market-')) ? 1.6 : this.mode === 'patient' ? 0.8 : 1.15);
     this.holdGain = options.holdGain ?? (this.mode === 'patient' ? 1.12 : (this.mode === 'aggressive' || this.mode === 'market' || this.mode === 'market-focused' || this.mode.startsWith('market-')) ? 1.5 : 1.3);
   }
@@ -130,6 +132,17 @@ export class Strategy {
     // immediately playable six-plus-letter payout, never against a near-word.
     if (this.mode === 'market-convert' && readyGain > 0 && afterBest && afterBest.word.length >= 6) {
       cashCap = Math.max(cashCap, Math.min(balance, afterBest.score));
+    }
+    // A mature rack still needs scoring power. This reservation was validated
+    // against strong Vickrey fields; it retains the existing cash caps and
+    // requires vowels, a new letter and support for difficult consonants.
+    if (this.qualityAcquisition && ctx.auctionType === 'Vickrey' && ctx.remainingTiles >= 8
+      && tiles >= 5 && tiles <= 12 && have === 0 && face >= 3 && vowels > 0) {
+      const fit = readyGain > 0 || nearAfter > nearBefore;
+      if (letter !== 'Q' || (ctx.myRack.get('U') ?? 0) > 0 || fit) {
+        const flexibility = letter === 'J' && !fit ? 0.75 : letter === 'Z' && !fit ? 0.8 : 1;
+        value = Math.max(value, (3 * face + 8) * flexibility);
+      }
     }
     const baseBid = Math.min(balance, Math.max(0, Math.floor(Math.min(value, cashCap))));
     return this.useLetterPrices ? letterPriceBid({ ...ctx, letter }, { baseBid, face, have, readyGain, tiles, vowels, cashCap }) : baseBid;

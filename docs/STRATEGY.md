@@ -1,8 +1,8 @@
 # Strategy and experiments
 
-Current production profile: **`evo-final-0-letter-price-v2`**, with explicit public letter-price history and a last-usable-auction cash rule. See [letter-price confirmation](LETTER_PRICE_IMPROVEMENT.md), [terminal-v2 evidence](TERMINAL_V2.md), and [the public match audit](PUBLIC_47739_AUDIT.md). Earlier benchmark sections below describe historical candidates.
+Current production profile: **`evo-final-0-letter-price-quality-v3`**, with explicit public letter-price history, Vickrey quality acquisition, and a last-usable-auction cash rule. See [quality confirmation and parity](QUALITY_ACQUISITION_IMPROVEMENT.md). See [letter-price confirmation](LETTER_PRICE_IMPROVEMENT.md), [terminal-v2 evidence](TERMINAL_V2.md), and [the public match audit](PUBLIC_47739_AUDIT.md). Earlier benchmark sections below describe historical candidates.
 
-The current production policy is `evo-final-0-letter-price-v2`: indexed word valuation, cash-aware acquisition, explicit public per-letter price history, and a last-usable-auction cash rule. Promotions use fresh paired local validation and public match observation. Earlier sections below retain historical experiments and do not establish live superiority.
+The current production policy is `evo-final-0-letter-price-quality-v3`: indexed word valuation, cash-aware acquisition, explicit public per-letter price history, and a last-usable-auction cash rule. Promotions use fresh paired local validation and public match observation. Earlier sections below retain historical experiments and do not establish live superiority.
 
 ## Live validation and the Vickrey bootstrap fix
 

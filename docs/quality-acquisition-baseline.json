@@ -1,0 +1,12 @@
+{
+  "label": "evo-final-0-letter-price-v2",
+  "options": {
+    "floorMultiplier": 1,
+    "acquisitionReserve": 1.2,
+    "bidScale": 1.6,
+    "holdGain": 1.3,
+    "terminalSpend": false,
+    "letterPrices": true,
+    "lastUsableAllIn": true
+  }
+}

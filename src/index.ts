@@ -33,7 +33,7 @@ if (mode && !modes.includes(mode as StrategyMode)) throw new Error(`Unknown STRA
 const strategyOptions: StrategyOptions = process.env.STRATEGY_OPTIONS ? JSON.parse(process.env.STRATEGY_OPTIONS) : {};
 if (!strategyOptions || typeof strategyOptions !== 'object' || Array.isArray(strategyOptions)) throw new Error('STRATEGY_OPTIONS must be an object.');
 for (const [key, value] of Object.entries(strategyOptions)) {
-  if ((key === 'terminalSpend' || key === 'letterPrices' || key === 'lastUsableAllIn') && typeof value === 'boolean') continue;
+  if ((key === 'terminalSpend' || key === 'letterPrices' || key === 'lastUsableAllIn' || key === 'qualityAcquisition') && typeof value === 'boolean') continue;
   if (!['bidScale', 'holdGain', 'floorMultiplier', 'acquisitionReserve'].includes(key) || typeof value !== 'number' || !Number.isFinite(value) || value <= 0 || value > 5) throw new Error(`Invalid strategy option ${key}`);
 }
 const useProductionProfile = !mode && !process.env.STRATEGY_OPTIONS;

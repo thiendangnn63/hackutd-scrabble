@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "complete": true,
+  "phase": "fresh-confirmation",
+  "baselineConfig": {
+    "label": "evo-final-0-letter-price-v2",
+    "options": {
+      "floorMultiplier": 1,
+      "acquisitionReserve": 1.2,
+      "bidScale": 1.6,
+      "holdGain": 1.3,
+      "terminalSpend": false,
+      "letterPrices": true,
+      "lastUsableAllIn": true
+    }
+  },
+  "candidate": {
+    "name": "quality-3-3",
+    "kind": "quality",
+    "minFace": 3,
+    "multiplier": 3,
+    "offset": 8,
+    "maxRack": 12
+  },
+  "productionOption": {
+    "qualityAcquisition": true
+  },
+  "format": "Vickrey",
+  "gamesPerPolicy": 1008,
+  "physicalGames": 2016,
+  "seedRange": [
+    261000001,
+    261001008
+  ],
+  "methodology": "Fresh common bags and six-seat by three-field full factorial: current-v2 letter-price selfplay, current strong mixed, legacy strong with no idle/empirical fields. Vickrey, exact private deal, dictionary/floor reward, public closed auction letter prices, cash and final-tile rules. Identical frozen holding; structural changes alter bids only. Owned face equals played base face plus final rack face.",
+  "factorial": {
+    "seats": 6,
+    "opponentFields": 3,
+    "cells": 18,
+    "casesPerCell": 56,
+    "observedCounts": {
+      "current-price-selfplay/seat-0": 56,
+      "current-price-selfplay/seat-1": 56,
+      "current-price-selfplay/seat-2": 56,
+      "current-price-selfplay/seat-3": 56,
+      "current-price-selfplay/seat-4": 56,
+      "current-price-selfplay/seat-5": 56,
+      "current-price-strong-mixed/seat-0": 56,
+      "current-price-strong-mixed/seat-1": 56,
+      "current-price-strong-mixed/seat-2": 56,
+      "current-price-strong-mixed/seat-3": 56,
+      "current-price-strong-mixed/seat-4": 56,
+      "current-price-strong-mixed/seat-5": 56,
+      "legacy-strong/seat-0": 56,
+      "legacy-strong/seat-1": 56,
+      "legacy-strong/seat-2": 56,
+      "legacy-strong/seat-3": 56,
+      "legacy-strong/seat-4": 56,
+      "legacy-strong/seat-5": 56
+    }
+  },
+  "baselineSummary": {
+    "games": 1008,
+    "meanPlace": 3.1200396825396823,
+    "meanScore": 74.37202380952381,
+    "wins": 220,
+    "lasts": 129,
+    "strictLasts": 119,
+    "cash": 19.04265873015873,
+    "ownedFace": 33.10218253968254,
+    "purchasedFace": 23.547619047619047,
+    "tilesWon": 11.317460317460318,
+    "playedFace": 31.69543650793651
+  },
+  "candidateSummary": {
+    "games": 1008,
+    "meanPlace": 2.9632936507936507,
+    "meanScore": 75.85019841269842,
+    "wins": 232,
+    "lasts": 95,
+    "strictLasts": 87,
+    "cash": 17.5,
+    "ownedFace": 34.17460317460318,
+    "purchasedFace": 24.620039682539684,
+    "tilesWon": 11.118055555555555,
+    "playedFace": 32.54960317460318
+  },
+  "paired": {
+    "place": {
+      "mean": -0.15674603174603174,
+      "ci95": [
+        -0.24731178121507869,
+        -0.06618028227698479
+      ]
+    },
+    "score": {
+      "mean": 1.4781746031746033,
+      "ci95": [
+        0.5234133600948663,
+        2.43293584625434
+      ]
+    },
+    "first": {
+      "mean": 0.011904761904761904,
+      "ci95": [
+        -0.013746417558063252,
+        0.03755594136758706
+      ]
+    },
+    "last": {
+      "mean": -0.03373015873015873,
+      "ci95": [
+        -0.053072381483284865,
+        -0.014387935977032591
+      ]
+    },
+    "ownedFace": {
+      "mean": 1.0724206349206349,
+      "ci95": [
+        0.6848019041064342,
+        1.4600393657348356
+      ]
+    },
+    "purchasedFace": {
+      "mean": 1.0724206349206349,
+      "ci95": [
+        0.6848019041064342,
+        1.4600393657348356
+      ]
+    }
+  },
+  "byScenario": {
+    "current-price-selfplay": {
+      "baseline": {
+        "games": 336,
+        "meanPlace": 3.3422619047619047,
+        "meanScore": 73.91964285714286,
+        "wins": 63,
+        "lasts": 56,
+        "strictLasts": 53,
+        "cash": 21.12797619047619,
+        "ownedFace": 31.407738095238095,
+        "purchasedFace": 21.610119047619047,
+        "tilesWon": 11.321428571428571,
+        "playedFace": 30.226190476190474
+      },
+      "candidate": {
+        "games": 336,
+        "meanPlace": 3.0029761904761907,
+        "meanScore": 76.81547619047619,
+        "wins": 75,
+        "lasts": 35,
+        "strictLasts": 31,
+        "cash": 19.154761904761905,
+        "ownedFace": 33.080357142857146,
+        "purchasedFace": 23.282738095238095,
+        "tilesWon": 11.25297619047619,
+        "playedFace": 31.56547619047619
+      },
+      "paired": {
+        "place": {
+          "games": 336,
+          "mean": -0.3392857142857143,
+          "ci95": [
+            -0.4996302593576573,
+            -0.1789411692137713
+          ]
+        },
+        "score": {
+          "games": 336,
+          "mean": 2.8958333333333335,
+          "ci95": [
+            1.31421295133489,
+            4.477453715331777
+          ]
+        },
+        "first": {
+          "games": 336,
+          "mean": 0.03571428571428571,
+          "ci95": [
+            -0.006239254094502322,
+            0.07766782552307375
+          ]
+        },
+        "last": {
+          "games": 336,
+          "mean": -0.0625,
+          "ci95": [
+            -0.09930365072200939,
+            -0.025696349277990617
+          ]
+        },
+        "purchasedFace": {
+          "games": 336,
+          "mean": 1.6726190476190477,
+          "ci95": [
+            1.0427083758609854,
+            2.3025297193771097
+          ]
+        }
+      }
+    },
+    "current-price-strong-mixed": {
+      "baseline": {
+        "games": 336,
+        "meanPlace": 3.488095238095238,
+        "meanScore": 70.46130952380952,
+        "wins": 46,
+        "lasts": 59,
+        "strictLasts": 56,
+        "cash": 19.988095238095237,
+        "ownedFace": 30.55654761904762,
+        "purchasedFace": 21.157738095238095,
+        "tilesWon": 10.922619047619047,
+        "playedFace": 29.425595238095237
+      },
+      "candidate": {
+        "games": 336,
+        "meanPlace": 3.2648809523809526,
+        "meanScore": 72.91666666666667,
+        "wins": 65,
+        "lasts": 46,
+        "strictLasts": 44,
+        "cash": 18.107142857142858,
+        "ownedFace": 32.30654761904762,
+        "purchasedFace": 22.907738095238095,
+        "tilesWon": 10.842261904761905,
+        "playedFace": 30.883928571428573
+      },
+      "paired": {
+        "place": {
+          "games": 336,
+          "mean": -0.22321428571428573,
+          "ci95": [
+            -0.38723491677311117,
+            -0.05919365465546028
+          ]
+        },
+        "score": {
+          "games": 336,
+          "mean": 2.455357142857143,
+          "ci95": [
+            0.8303965444063948,
+            4.080317741307891
+          ]
+        },
+        "first": {
+          "games": 336,
+          "mean": 0.05654761904761905,
+          "ci95": [
+            0.015268952944046663,
+            0.09782628515119143
+          ]
+        },
+        "last": {
+          "games": 336,
+          "mean": -0.03869047619047619,
+          "ci95": [
+            -0.07677454027221198,
+            -0.0006064121087403992
+          ]
+        },
+        "purchasedFace": {
+          "games": 336,
+          "mean": 1.75,
+          "ci95": [
+            1.1702241812562375,
+            2.3297758187437623
+          ]
+        }
+      }
+    },
+    "legacy-strong": {
+      "baseline": {
+        "games": 336,
+        "meanPlace": 2.5297619047619047,
+        "meanScore": 78.73511904761905,
+        "wins": 111,
+        "lasts": 14,
+        "strictLasts": 10,
+        "cash": 16.011904761904763,
+        "ownedFace": 37.342261904761905,
+        "purchasedFace": 27.875,
+        "tilesWon": 11.708333333333334,
+        "playedFace": 35.43452380952381
+      },
+      "candidate": {
+        "games": 336,
+        "meanPlace": 2.6220238095238093,
+        "meanScore": 77.81845238095238,
+        "wins": 92,
+        "lasts": 14,
+        "strictLasts": 12,
+        "cash": 15.238095238095237,
+        "ownedFace": 37.13690476190476,
+        "purchasedFace": 27.669642857142858,
+        "tilesWon": 11.258928571428571,
+        "playedFace": 35.19940476190476
+      },
+      "paired": {
+        "place": {
+          "games": 336,
+          "mean": 0.09226190476190477,
+          "ci95": [
+            -0.049897692736337845,
+            0.23442150226014738
+          ]
+        },
+        "score": {
+          "games": 336,
+          "mean": -0.9166666666666666,
+          "ci95": [
+            -2.6425467483596976,
+            0.8092134150263645
+          ]
+        },
+        "first": {
+          "games": 336,
+          "mean": -0.05654761904761905,
+          "ci95": [
+            -0.10539959280474408,
+            -0.007695645290494019
+          ]
+        },
+        "last": {
+          "games": 336,
+          "mean": 0.0,
+          "ci95": [
+            -0.02336813325324241,
+            0.02336813325324241
+          ]
+        },
+        "purchasedFace": {
+          "games": 336,
+          "mean": -0.20535714285714285,
+          "ci95": [
+            -0.975992650617391,
+            0.5652783649031052
+          ]
+        }
+      }
+    }
+  },
+  "limitations": "Fresh paired local confirmation, not live proof or a 150-point guarantee. Normal-approximation intervals; first-place-rate interval includes zero. Legacy-strong field regressed in point estimates while both current-price fields improved. Confirmation seeds are archived evidence, not reusable fresh promotion data."
+}
