@@ -1,0 +1,414 @@
+{
+  "baselineConfig": {
+    "label": "evo-final-0-letter-price-quality-v4",
+    "options": {
+      "floorMultiplier": 1.6,
+      "acquisitionReserve": 1.2,
+      "bidScale": 1.6,
+      "holdGain": 1.12,
+      "terminalSpend": true,
+      "letterPrices": true,
+      "lastUsableAllIn": true,
+      "qualityAcquisition": true
+    }
+  },
+  "candidateConfig": {
+    "label": "price-cycle-2-shadow",
+    "options": {
+      "mode": "market-convert",
+      "floorMultiplier": 1.6,
+      "acquisitionReserve": 1.2,
+      "bidScale": 0.9,
+      "holdGain": 1.12,
+      "terminalSpend": true,
+      "letterPrices": true,
+      "lastUsableAllIn": true,
+      "qualityAcquisition": true
+    }
+  },
+  "pooledGamesPerPolicy": 2016,
+  "physicalGames": 4032,
+  "baseline": {
+    "games": 2016,
+    "meanPlace": 3.378968253968254,
+    "meanScore": 73.18105158730158,
+    "winRate": 0.18204365079365079,
+    "lastRate": 0.1498015873015873
+  },
+  "candidate": {
+    "games": 2016,
+    "meanPlace": 3.2415674603174605,
+    "meanScore": 75.30208333333333,
+    "winRate": 0.23313492063492064,
+    "lastRate": 0.14484126984126985
+  },
+  "paired": {
+    "place": {
+      "mean": -0.13740079365079366,
+      "ci95": [
+        -0.21280867110626434,
+        -0.061992916195322975
+      ]
+    },
+    "score": {
+      "mean": 2.121031746031746,
+      "ci95": [
+        1.3669112926887184,
+        2.8751521993747735
+      ]
+    },
+    "first": {
+      "mean": 0.05109126984126984,
+      "ci95": [
+        0.0312630861274225,
+        0.07091945355511718
+      ]
+    },
+    "last": {
+      "mean": -0.00496031746031746,
+      "ci95": [
+        -0.023664771275687745,
+        0.013744136355052824
+      ]
+    }
+  },
+  "byField": {
+    "price-v1-selfplay": {
+      "baseline": {
+        "games": 672,
+        "meanPlace": 3.480654761904762,
+        "meanScore": 72.36160714285714,
+        "winRate": 0.16517857142857142,
+        "lastRate": 0.16071428571428573
+      },
+      "candidate": {
+        "games": 672,
+        "meanPlace": 3.294642857142857,
+        "meanScore": 74.68154761904762,
+        "winRate": 0.23065476190476192,
+        "lastRate": 0.16666666666666666
+      },
+      "paired": {
+        "place": {
+          "mean": -0.18601190476190477,
+          "ci95": [
+            -0.3166686336903856,
+            -0.05535517583342392
+          ]
+        },
+        "score": {
+          "mean": 2.3199404761904763,
+          "ci95": [
+            0.942977604193197,
+            3.696903348187756
+          ]
+        },
+        "first": {
+          "mean": 0.06547619047619048,
+          "ci95": [
+            0.03256712952889922,
+            0.09838525142348173
+          ]
+        },
+        "last": {
+          "mean": 0.005952380952380952,
+          "ci95": [
+            -0.026547316525416947,
+            0.03845207843017885
+          ]
+        }
+      }
+    },
+    "price-v1-v2-mixed": {
+      "baseline": {
+        "games": 672,
+        "meanPlace": 3.3392857142857144,
+        "meanScore": 73.31547619047619,
+        "winRate": 0.16964285714285715,
+        "lastRate": 0.15476190476190477
+      },
+      "candidate": {
+        "games": 672,
+        "meanPlace": 3.2470238095238093,
+        "meanScore": 75.73065476190476,
+        "winRate": 0.21875,
+        "lastRate": 0.12648809523809523
+      },
+      "paired": {
+        "place": {
+          "mean": -0.09226190476190477,
+          "ci95": [
+            -0.22691753980188836,
+            0.04239373027807883
+          ]
+        },
+        "score": {
+          "mean": 2.4151785714285716,
+          "ci95": [
+            1.1431835136040915,
+            3.687173629253052
+          ]
+        },
+        "first": {
+          "mean": 0.049107142857142856,
+          "ci95": [
+            0.014647595362118397,
+            0.08356669035216732
+          ]
+        },
+        "last": {
+          "mean": -0.028273809523809524,
+          "ci95": [
+            -0.0613563507669658,
+            0.004808731719346756
+          ]
+        }
+      }
+    },
+    "strong-mixed": {
+      "baseline": {
+        "games": 672,
+        "meanPlace": 3.3169642857142856,
+        "meanScore": 73.86607142857143,
+        "winRate": 0.2113095238095238,
+        "lastRate": 0.13392857142857142
+      },
+      "candidate": {
+        "games": 672,
+        "meanPlace": 3.1830357142857144,
+        "meanScore": 75.49404761904762,
+        "winRate": 0.25,
+        "lastRate": 0.14136904761904762
+      },
+      "paired": {
+        "place": {
+          "mean": -0.13392857142857142,
+          "ci95": [
+            -0.2604172846023467,
+            -0.007439858254796178
+          ]
+        },
+        "score": {
+          "mean": 1.6279761904761905,
+          "ci95": [
+            0.36020165053953135,
+            2.89575073041285
+          ]
+        },
+        "first": {
+          "mean": 0.03869047619047619,
+          "ci95": [
+            0.0030622144644976146,
+            0.07431873791645477
+          ]
+        },
+        "last": {
+          "mean": 0.00744047619047619,
+          "ci95": [
+            -0.024126577471270137,
+            0.03900752985222252
+          ]
+        }
+      }
+    }
+  },
+  "independentRounds": [
+    ".research/continuous-price/cycle-2/proof",
+    ".research/continuous-price/cycle-2/replication"
+  ],
+  "opponentDefinitions": {
+    "fields": {
+      "price-v1-selfplay": {
+        "displayLabel": "frozen-current-champion-selfplay",
+        "rivals": [
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1.6,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1.6,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1.6,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1.6,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1.6,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          }
+        ]
+      },
+      "price-v1-v2-mixed": {
+        "displayLabel": "frozen-proven-policy-mix",
+        "rivals": [
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.3,
+            "terminalSpend": false,
+            "letterPrices": true,
+            "lastUsableAllIn": false,
+            "qualityAcquisition": false
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.3,
+            "terminalSpend": false,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": false
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.3,
+            "terminalSpend": false,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1.6,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 2,
+            "acquisitionReserve": 1.5,
+            "bidScale": 1.6,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          }
+        ]
+      },
+      "strong-mixed": {
+        "displayLabel": "frozen-current-parameter-pressure",
+        "rivals": [
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1.6,
+            "acquisitionReserve": 0.8,
+            "bidScale": 2,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 2,
+            "acquisitionReserve": 1.5,
+            "bidScale": 1.6,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1.6,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.2,
+            "holdGain": 1,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.3,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          },
+          {
+            "mode": "market-convert",
+            "floorMultiplier": 1.6,
+            "acquisitionReserve": 1.2,
+            "bidScale": 1.6,
+            "holdGain": 1.12,
+            "terminalSpend": true,
+            "letterPrices": true,
+            "lastUsableAllIn": true,
+            "qualityAcquisition": true
+          }
+        ]
+      }
+    }
+  },
+  "seedRanges": [
+    [
+      1502000001,
+      1502001008
+    ],
+    [
+      1601000001,
+      1601001008
+    ]
+  ],
+  "method": "Two disjoint independent paired confirmations of one frozen candidate. Normal95% paired CIs; three explicit all-active fields, exact six-seat balance. Model-only evidence, not a live guarantee."
+}

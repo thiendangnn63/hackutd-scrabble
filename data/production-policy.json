@@ -1,9 +1,9 @@
 {
-  "label": "evo-final-0-letter-price-quality-v4",
+  "label": "evo-final-0-letter-price-quality-v5",
   "options": {
     "floorMultiplier": 1.6,
     "acquisitionReserve": 1.2,
-    "bidScale": 1.6,
+    "bidScale": 0.9,
     "holdGain": 1.12,
     "terminalSpend": true,
     "letterPrices": true,

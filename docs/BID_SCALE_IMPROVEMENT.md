@@ -1,0 +1,7 @@
+# Replicated bid-scale improvement: v5
+
+The selected v5 profile changes only `bidScale` from 1.6 to 0.9 relative to v4. Quality acquisition, public letter prices, last-usable all-in, terminal spending, and all other parameters remain unchanged.
+
+Two independent fresh confirmations, each with 1,008 paired bags and three explicitly frozen active opponent fields crossed with all six seats, support promotion. Across 2,016 pairs (4,032 full local matches), mean place improves from 3.3790 to 3.2416: paired difference -0.1374, approximate 95% interval [-0.2128, -0.0620]. Mean score improves from 73.181 to 75.302: +2.121 [+1.367, +2.875]. First-place rate, including ties, rises from 18.20% to 23.31%: +5.109 percentage points [+3.126, +7.092]. Bottom-score rate improves in its point estimate, but its interval includes both benefit and harm; do not claim proven tail improvement.
+
+The independent replication alone also improved score, mean place and first-place rate, and all three field mean-place point estimates favored the challenger. Exact seed ranges, frozen baseline/candidate configurations, field definitions and paired intervals are retained in [the pooled evidence](bid-scale-pooled-comparison.json). These are model results with idealized timing, not a measured public win-rate gain. The original bigdawg identity remains the tournament entry; public copies are separate, frozen comparison batches.
